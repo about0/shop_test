@@ -13,6 +13,7 @@ purchase
     Click image    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input
     Input text    id=first_name    Губолом
     Input text    id=phone    6666666
+    Input text    id=email    koganqog@gmail.com
     click element    //*[@id="List1"]
     click element    //*[@id="List1"]/option[4]
     click element    //*[@id="List2"]
@@ -20,6 +21,13 @@ purchase
     Input text    name=cust_new_addr    Киев, ул. Глывоческая 40-х
     Click image    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
     Click image    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img
+    Close all browsers
+    Open Browser    https://mail.google.com    browser=googlechrome
+    input text    name=Email    koganqog
+    input text    name=Passwd    Asd!08201455
+    click button    name=signIn
+    input text    id=gbqfq    isex
+    page should contain element    name=iSex.com.ua
     Close all browsers
 
 filter
@@ -34,5 +42,5 @@ filter
     Click image    //*[@id="filters"]/div[1]/input
     page should contain element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/center/h1    loglevel=INFO
     page should contain link    http://www.isex.com.ua/dildos.html    loglevel=INFO
-    click link     http://www.isex.com.ua/dildos.html
+    click link    http://www.isex.com.ua/dildos.html
     Close all browsers
