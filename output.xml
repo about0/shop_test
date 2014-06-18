@@ -1,251 +1,1255 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20140609 17:53:56.831" generator="Robot 2.8.4 (Python 2.7.6 on linux2)">
+<robot generated="20140618 13:19:04.234" generator="Robot 2.8.4 (Python 2.7.6 on linux2)">
 <suite source="/home/about0/testing/shop_test/shop_testing.robot" id="s1" name="Shop Testing">
-<test id="s1-t1" name="purchase">
+<test id="s1-t1" name="multiple purchases">
 <kw type="kw" name="Selenium2Library.Open Browser">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
 <arg>http://www.isex.com.ua/</arg>
 <arg>browser=chrome</arg>
 </arguments>
-<msg timestamp="20140609 17:53:56.894" level="INFO">Opening browser 'chrome' to base url 'http://www.isex.com.ua/'</msg>
-<status status="PASS" endtime="20140609 17:54:01.125" starttime="20140609 17:53:56.894"></status>
+<msg timestamp="20140618 13:19:04.292" level="INFO">Opening browser 'chrome' to base url 'http://www.isex.com.ua/'</msg>
+<status status="PASS" endtime="20140618 13:19:08.603" starttime="20140618 13:19:04.292"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="menu"]/li[5]/a/div</arg>
+</arguments>
+<msg timestamp="20140618 13:19:08.605" level="INFO">Clicking element '//*[@id="menu"]/li[5]/a/div'.</msg>
+<status status="PASS" endtime="20140618 13:19:09.818" starttime="20140618 13:19:08.604"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_975"]/tbody/tr[1]/td[1]/a[1]/img</arg>
+</arguments>
+<msg timestamp="20140618 13:19:09.819" level="INFO">Clicking element '//*[@id="instock_tab_975"]/tbody/tr[1]/td[1]/a[1]/img'.</msg>
+<status status="PASS" endtime="20140618 13:19:12.281" starttime="20140618 13:19:09.819"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_975"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:19:12.298" level="INFO">Current page contains element '//*[@id="instock_tab_975"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:19:12.299" starttime="20140618 13:19:12.281"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_975"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:19:12.299" level="INFO">Clicking element '//*[@id="instock_tab_975"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:19:13.806" starttime="20140618 13:19:12.299"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[1]/a/img</arg>
+</arguments>
+<msg timestamp="20140618 13:19:13.830" level="INFO">Current page contains element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[1]/a/img'.</msg>
+<status status="PASS" endtime="20140618 13:19:13.830" starttime="20140618 13:19:13.807"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[1]/a/img</arg>
+</arguments>
+<msg timestamp="20140618 13:19:13.830" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[1]/a/img'.</msg>
+<status status="PASS" endtime="20140618 13:19:15.409" starttime="20140618 13:19:13.830"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Link">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>http://www.isex.com.ua/vagina/vagina-vibration.html</arg>
+</arguments>
+<msg timestamp="20140618 13:19:15.410" level="INFO">Clicking link 'http://www.isex.com.ua/vagina/vagina-vibration.html'.</msg>
+<status status="PASS" endtime="20140618 13:19:17.356" starttime="20140618 13:19:15.409"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_949"]/tbody/tr[1]/td[1]/a[1]/img</arg>
+</arguments>
+<msg timestamp="20140618 13:19:17.357" level="INFO">Clicking element '//*[@id="instock_tab_949"]/tbody/tr[1]/td[1]/a[1]/img'.</msg>
+<status status="PASS" endtime="20140618 13:19:20.215" starttime="20140618 13:19:17.356"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_949"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:19:20.232" level="INFO">Current page contains element '//*[@id="instock_tab_949"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:19:20.232" starttime="20140618 13:19:20.215"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_949"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:19:20.232" level="INFO">Clicking element '//*[@id="instock_tab_949"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:19:21.713" starttime="20140618 13:19:20.232"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a</arg>
+</arguments>
+<msg timestamp="20140618 13:19:21.735" level="INFO">Current page contains element '//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a'.</msg>
+<status status="PASS" endtime="20140618 13:19:21.735" starttime="20140618 13:19:21.714"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[3]/td[1]/a</arg>
+</arguments>
+<msg timestamp="20140618 13:19:21.749" level="INFO">Current page contains element '//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[3]/td[1]/a'.</msg>
+<status status="PASS" endtime="20140618 13:19:21.749" starttime="20140618 13:19:21.736"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Input Text">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
 <arguments>
-<arg>id=isfindedit</arg>
-<arg>вибратор</arg>
+<arg>//*[@id="isfindedit"]</arg>
+<arg>маска</arg>
 </arguments>
-<msg timestamp="20140609 17:54:01.126" level="INFO">Typing text 'вибратор' into text field 'id=isfindedit'</msg>
-<status status="PASS" endtime="20140609 17:54:01.302" starttime="20140609 17:54:01.126"></status>
+<msg timestamp="20140618 13:19:21.750" level="INFO">Typing text 'маска' into text field '//*[@id="isfindedit"]'</msg>
+<status status="PASS" endtime="20140618 13:19:21.865" starttime="20140618 13:19:21.750"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Click Button">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
-<arg>id=issearchbut</arg>
+<arg>//*[@id="issearchbut"]</arg>
 </arguments>
-<msg timestamp="20140609 17:54:01.303" level="INFO">Clicking button 'id=issearchbut'.</msg>
-<status status="PASS" endtime="20140609 17:54:04.052" starttime="20140609 17:54:01.302"></status>
+<msg timestamp="20140618 13:19:21.865" level="INFO">Clicking button '//*[@id="issearchbut"]'.</msg>
+<status status="PASS" endtime="20140618 13:19:24.029" starttime="20140618 13:19:21.865"></status>
 </kw>
-<kw type="kw" name="Selenium2Library.Click Image">
-<doc>Clicks an image found by `locator`.</doc>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
 <arguments>
-<arg>//*[@id="instock_tab_11811"]/tbody/tr[1]/td[1]/a[1]/img</arg>
+<arg>//*[@id="instock_tab_1410"]/tbody/tr[1]/td[1]/a[1]/img</arg>
 </arguments>
-<msg timestamp="20140609 17:54:04.053" level="INFO">Clicking image '//*[@id="instock_tab_11811"]/tbody/tr[1]/td[1]/a[1]/img'.</msg>
-<status status="PASS" endtime="20140609 17:54:05.831" starttime="20140609 17:54:04.052"></status>
+<msg timestamp="20140618 13:19:24.029" level="INFO">Clicking element '//*[@id="instock_tab_1410"]/tbody/tr[1]/td[1]/a[1]/img'.</msg>
+<status status="PASS" endtime="20140618 13:19:25.925" starttime="20140618 13:19:24.029"></status>
 </kw>
-<kw type="kw" name="Selenium2Library.Click Image">
-<doc>Clicks an image found by `locator`.</doc>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
 <arguments>
-<arg>//*[@id="instock_tab_11811"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input</arg>
+<arg>//*[@id="instock_tab_1410"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input</arg>
 </arguments>
-<msg timestamp="20140609 17:54:05.831" level="INFO">Clicking image '//*[@id="instock_tab_11811"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input'.</msg>
-<status status="PASS" endtime="20140609 17:54:07.129" starttime="20140609 17:54:05.831"></status>
+<msg timestamp="20140618 13:19:25.926" level="INFO">Clicking element '//*[@id="instock_tab_1410"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:19:27.269" starttime="20140618 13:19:25.926"></status>
 </kw>
-<kw type="kw" name="Selenium2Library.Page Should Contain">
-<doc>Verifies that current page contains `text`.</doc>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
 <arguments>
-<arg>Triple Play Vibrator Waterproof Purple</arg>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a</arg>
 </arguments>
-<msg timestamp="20140609 17:54:07.152" level="INFO">Current page contains text 'Triple Play Vibrator Waterproof Purple'.</msg>
-<status status="PASS" endtime="20140609 17:54:07.152" starttime="20140609 17:54:07.129"></status>
+<msg timestamp="20140618 13:19:27.280" level="INFO">Current page contains element '//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a'.</msg>
+<status status="PASS" endtime="20140618 13:19:27.280" starttime="20140618 13:19:27.270"></status>
 </kw>
-<kw type="kw" name="Selenium2Library.Page Should Contain">
-<doc>Verifies that current page contains `text`.</doc>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
 <arguments>
-<arg>1939</arg>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[3]/td[1]/a</arg>
 </arguments>
-<msg timestamp="20140609 17:54:07.171" level="INFO">Current page contains text '1939'.</msg>
-<status status="PASS" endtime="20140609 17:54:07.172" starttime="20140609 17:54:07.152"></status>
+<msg timestamp="20140618 13:19:27.287" level="INFO">Current page contains element '//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[3]/td[1]/a'.</msg>
+<status status="PASS" endtime="20140618 13:19:27.287" starttime="20140618 13:19:27.280"></status>
 </kw>
-<kw type="kw" name="Selenium2Library.Click Image">
-<doc>Clicks an image found by `locator`.</doc>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[4]/td[1]/a</arg>
+</arguments>
+<msg timestamp="20140618 13:19:27.305" level="INFO">Current page contains element '//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[4]/td[1]/a'.</msg>
+<status status="PASS" endtime="20140618 13:19:27.306" starttime="20140618 13:19:27.287"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[3]/b[2]/a/span</arg>
+</arguments>
+<msg timestamp="20140618 13:19:27.306" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[3]/b[2]/a/span'.</msg>
+<status status="PASS" endtime="20140618 13:19:27.381" starttime="20140618 13:19:27.306"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[3]/td[3]/b[2]/a/span</arg>
+</arguments>
+<msg timestamp="20140618 13:19:27.381" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[3]/td[3]/b[2]/a/span'.</msg>
+<status status="PASS" endtime="20140618 13:19:27.446" starttime="20140618 13:19:27.381"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[4]/td[3]/b[2]/a/span</arg>
+</arguments>
+<msg timestamp="20140618 13:19:27.447" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[4]/td[3]/b[2]/a/span'.</msg>
+<status status="PASS" endtime="20140618 13:19:27.499" starttime="20140618 13:19:27.446"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input</arg>
 </arguments>
-<msg timestamp="20140609 17:54:07.172" level="INFO">Clicking image '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input'.</msg>
-<status status="PASS" endtime="20140609 17:54:08.292" starttime="20140609 17:54:07.172"></status>
+<msg timestamp="20140618 13:19:27.499" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:19:28.870" starttime="20140618 13:19:27.499"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:19:28.871" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:19:28.990" starttime="20140618 13:19:28.870"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="errmessfirst_name"]</arg>
+</arguments>
+<msg timestamp="20140618 13:19:29.007" level="INFO">Current page contains element '//*[@id="errmessfirst_name"]'.</msg>
+<status status="PASS" endtime="20140618 13:19:29.007" starttime="20140618 13:19:28.990"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="errmessphone"]</arg>
+</arguments>
+<msg timestamp="20140618 13:19:29.019" level="INFO">Current page contains element '//*[@id="errmessphone"]'.</msg>
+<status status="PASS" endtime="20140618 13:19:29.019" starttime="20140618 13:19:29.007"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[1]/a/img</arg>
+</arguments>
+<msg timestamp="20140618 13:19:29.020" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[1]/a/img'.</msg>
+<status status="PASS" endtime="20140618 13:19:30.248" starttime="20140618 13:19:29.020"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[3]/b[1]/a/span</arg>
+</arguments>
+<msg timestamp="20140618 13:19:30.249" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[3]/b[1]/a/span'.</msg>
+<status status="PASS" endtime="20140618 13:19:30.328" starttime="20140618 13:19:30.249"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[3]/td[3]/b[1]/a/span</arg>
+</arguments>
+<msg timestamp="20140618 13:19:30.328" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[3]/td[3]/b[1]/a/span'.</msg>
+<status status="PASS" endtime="20140618 13:19:30.374" starttime="20140618 13:19:30.328"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[4]/td[3]/b[1]/a/span</arg>
+</arguments>
+<msg timestamp="20140618 13:19:30.375" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[4]/td[3]/b[1]/a/span'.</msg>
+<status status="PASS" endtime="20140618 13:19:30.439" starttime="20140618 13:19:30.375"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:19:30.439" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:19:31.576" starttime="20140618 13:19:30.439"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Input Text">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
 <arguments>
 <arg>id=first_name</arg>
-<arg>Губолом</arg>
+<arg>${name}</arg>
 </arguments>
-<msg timestamp="20140609 17:54:08.292" level="INFO">Typing text 'Губолом' into text field 'id=first_name'</msg>
-<status status="PASS" endtime="20140609 17:54:08.437" starttime="20140609 17:54:08.292"></status>
+<msg timestamp="20140618 13:19:31.577" level="INFO">Typing text 'Test' into text field 'id=first_name'</msg>
+<status status="PASS" endtime="20140618 13:19:31.704" starttime="20140618 13:19:31.577"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Input Text">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
 <arguments>
 <arg>id=phone</arg>
-<arg>6666666</arg>
+<arg>${phone}</arg>
 </arguments>
-<msg timestamp="20140609 17:54:08.437" level="INFO">Typing text '6666666' into text field 'id=phone'</msg>
-<status status="PASS" endtime="20140609 17:54:08.544" starttime="20140609 17:54:08.437"></status>
-</kw>
-<kw type="kw" name="Selenium2Library.Input Text">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=email</arg>
-<arg>koganqog@gmail.com</arg>
-</arguments>
-<msg timestamp="20140609 17:54:08.544" level="INFO">Typing text 'koganqog@gmail.com' into text field 'id=email'</msg>
-<status status="PASS" endtime="20140609 17:54:08.715" starttime="20140609 17:54:08.544"></status>
+<msg timestamp="20140618 13:19:31.704" level="INFO">Typing text 'test' into text field 'id=phone'</msg>
+<status status="PASS" endtime="20140618 13:19:31.797" starttime="20140618 13:19:31.704"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Click Element">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//*[@id="List1"]</arg>
 </arguments>
-<msg timestamp="20140609 17:54:08.716" level="INFO">Clicking element '//*[@id="List1"]'.</msg>
-<status status="PASS" endtime="20140609 17:54:08.801" starttime="20140609 17:54:08.715"></status>
+<msg timestamp="20140618 13:19:31.797" level="INFO">Clicking element '//*[@id="List1"]'.</msg>
+<status status="PASS" endtime="20140618 13:19:31.896" starttime="20140618 13:19:31.797"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Click Element">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
-<arg>//*[@id="List1"]/option[4]</arg>
+<arg>//*[@id="List1"]/option[2]</arg>
 </arguments>
-<msg timestamp="20140609 17:54:08.802" level="INFO">Clicking element '//*[@id="List1"]/option[4]'.</msg>
-<status status="PASS" endtime="20140609 17:54:08.860" starttime="20140609 17:54:08.801"></status>
+<msg timestamp="20140618 13:19:31.896" level="INFO">Clicking element '//*[@id="List1"]/option[2]'.</msg>
+<status status="PASS" endtime="20140618 13:19:31.960" starttime="20140618 13:19:31.896"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Click Element">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//*[@id="List2"]</arg>
 </arguments>
-<msg timestamp="20140609 17:54:08.861" level="INFO">Clicking element '//*[@id="List2"]'.</msg>
-<status status="PASS" endtime="20140609 17:54:08.981" starttime="20140609 17:54:08.860"></status>
+<msg timestamp="20140618 13:19:31.960" level="INFO">Clicking element '//*[@id="List2"]'.</msg>
+<status status="PASS" endtime="20140618 13:19:32.021" starttime="20140618 13:19:31.960"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Click Element">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//*[@id="List2"]/option[3]</arg>
 </arguments>
-<msg timestamp="20140609 17:54:08.982" level="INFO">Clicking element '//*[@id="List2"]/option[3]'.</msg>
-<status status="PASS" endtime="20140609 17:54:09.082" starttime="20140609 17:54:08.982"></status>
+<msg timestamp="20140618 13:19:32.022" level="INFO">Clicking element '//*[@id="List2"]/option[3]'.</msg>
+<status status="PASS" endtime="20140618 13:19:32.070" starttime="20140618 13:19:32.021"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="selectcitynp"]</arg>
+</arguments>
+<msg timestamp="20140618 13:19:32.070" level="INFO">Clicking element '//*[@id="selectcitynp"]'.</msg>
+<status status="PASS" endtime="20140618 13:19:32.126" starttime="20140618 13:19:32.070"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="selectcitynp"]/option[275]</arg>
+</arguments>
+<msg timestamp="20140618 13:19:32.126" level="INFO">Clicking element '//*[@id="selectcitynp"]/option[275]'.</msg>
+<status status="PASS" endtime="20140618 13:19:32.186" starttime="20140618 13:19:32.126"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Input Text">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
 <arguments>
-<arg>name=cust_new_addr</arg>
-<arg>Киев, ул. Глывоческая 40-х</arg>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[3]/td/table/tbody/tr/td[2]/textarea</arg>
+<arg>test</arg>
 </arguments>
-<msg timestamp="20140609 17:54:09.083" level="INFO">Typing text 'Киев, ул. Глывоческая 40-х' into text field 'name=cust_new_addr'</msg>
-<status status="PASS" endtime="20140609 17:54:09.676" starttime="20140609 17:54:09.082"></status>
+<msg timestamp="20140618 13:19:32.186" level="INFO">Typing text 'test' into text field '//*[@id="iscontenttabl"]/tbody/tr[3]/td/table/tbody/tr/td[2]/textarea'</msg>
+<status status="PASS" endtime="20140618 13:19:32.314" starttime="20140618 13:19:32.186"></status>
 </kw>
-<kw type="kw" name="Selenium2Library.Click Image">
-<doc>Clicks an image found by `locator`.</doc>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input</arg>
 </arguments>
-<msg timestamp="20140609 17:54:09.676" level="INFO">Clicking image '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input'.</msg>
-<status status="PASS" endtime="20140609 17:54:10.843" starttime="20140609 17:54:09.676"></status>
-</kw>
-<kw type="kw" name="Selenium2Library.Click Image">
-<doc>Clicks an image found by `locator`.</doc>
-<arguments>
-<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img</arg>
-</arguments>
-<msg timestamp="20140609 17:54:10.844" level="INFO">Clicking image '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img'.</msg>
-<status status="PASS" endtime="20140609 17:54:12.005" starttime="20140609 17:54:10.843"></status>
-</kw>
-<kw type="kw" name="Selenium2Library.Close All Browsers">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<arguments>
-</arguments>
-<status status="PASS" endtime="20140609 17:54:12.061" starttime="20140609 17:54:12.005"></status>
-</kw>
-<kw type="kw" name="Selenium2Library.Open Browser">
-<doc>Opens a new browser instance to given URL.</doc>
-<arguments>
-<arg>https://mail.google.com</arg>
-<arg>browser=googlechrome</arg>
-</arguments>
-<msg timestamp="20140609 17:54:12.061" level="INFO">Opening browser 'googlechrome' to base url 'https://mail.google.com'</msg>
-<status status="PASS" endtime="20140609 17:54:15.498" starttime="20140609 17:54:12.061"></status>
-</kw>
-<kw type="kw" name="Selenium2Library.Input Text">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>name=Email</arg>
-<arg>koganqog</arg>
-</arguments>
-<msg timestamp="20140609 17:54:15.499" level="INFO">Typing text 'koganqog' into text field 'name=Email'</msg>
-<status status="PASS" endtime="20140609 17:54:15.629" starttime="20140609 17:54:15.499"></status>
-</kw>
-<kw type="kw" name="Selenium2Library.Input Text">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>name=Passwd</arg>
-<arg>Asd!08201455</arg>
-</arguments>
-<msg timestamp="20140609 17:54:15.629" level="INFO">Typing text 'Asd!08201455' into text field 'name=Passwd'</msg>
-<status status="PASS" endtime="20140609 17:54:15.759" starttime="20140609 17:54:15.629"></status>
-</kw>
-<kw type="kw" name="Selenium2Library.Click Button">
-<doc>Clicks a button identified by `locator`.</doc>
-<arguments>
-<arg>name=signIn</arg>
-</arguments>
-<msg timestamp="20140609 17:54:15.760" level="INFO">Clicking button 'name=signIn'.</msg>
-<status status="PASS" endtime="20140609 17:54:18.483" starttime="20140609 17:54:15.759"></status>
-</kw>
-<kw type="kw" name="Selenium2Library.Input Text">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=gbqfq</arg>
-<arg>isex</arg>
-</arguments>
-<msg timestamp="20140609 17:54:18.484" level="INFO">Typing text 'isex' into text field 'id=gbqfq'</msg>
-<status status="PASS" endtime="20140609 17:54:19.400" starttime="20140609 17:54:18.484"></status>
+<msg timestamp="20140618 13:19:32.314" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:19:33.716" starttime="20140618 13:19:32.314"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Page Should Contain Element">
 <doc>Verifies element identified by `locator` is found on the current page.</doc>
 <arguments>
-<arg>name=iSex.com.ua</arg>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[5]</arg>
 </arguments>
-<msg timestamp="20140609 17:54:19.424" level="INFO">Current page contains element 'name=iSex.com.ua'.</msg>
-<status status="PASS" endtime="20140609 17:54:19.424" starttime="20140609 17:54:19.400"></status>
+<msg timestamp="20140618 13:19:33.733" level="INFO">Current page contains element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[5]'.</msg>
+<status status="PASS" endtime="20140618 13:19:33.733" starttime="20140618 13:19:33.716"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[4]</arg>
+</arguments>
+<msg timestamp="20140618 13:19:33.748" level="INFO">Current page contains element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[4]'.</msg>
+<status status="PASS" endtime="20140618 13:19:33.748" starttime="20140618 13:19:33.733"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img</arg>
+</arguments>
+<msg timestamp="20140618 13:19:33.749" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img'.</msg>
+<status status="PASS" endtime="20140618 13:19:35.579" starttime="20140618 13:19:33.749"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Close All Browsers">
 <doc>Closes all open browsers and resets the browser cache.</doc>
 <arguments>
 </arguments>
-<status status="PASS" endtime="20140609 17:54:19.479" starttime="20140609 17:54:19.424"></status>
+<status status="PASS" endtime="20140618 13:19:35.637" starttime="20140618 13:19:35.580"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="PASS" endtime="20140609 17:54:19.479" critical="yes" starttime="20140609 17:53:56.893"></status>
+<status status="PASS" endtime="20140618 13:19:35.637" critical="yes" starttime="20140618 13:19:04.292"></status>
 </test>
-<test id="s1-t2" name="filter">
-<kw type="kw" name="Selenium2Library.Create Webdriver">
-<doc>Creates an instance of a WebDriver.</doc>
+<test id="s1-t2" name="multiple variations">
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
 <arguments>
-<arg>Chrome</arg>
+<arg>//*[@id="isfindedit"]</arg>
+<arg>смазка</arg>
 </arguments>
-<msg timestamp="20140609 17:54:19.481" level="INFO">Creating an instance of the Chrome WebDriver</msg>
-<status status="PASS" endtime="20140609 17:54:20.897" starttime="20140609 17:54:19.481"></status>
+<msg timestamp="20140618 13:19:35.640" level="INFO">Typing text 'смазка' into text field '//*[@id="isfindedit"]'</msg>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20140618 13:19:35.648" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20140618 13:19:35.648" starttime="20140618 13:19:35.640"></status>
 </kw>
+<msg timestamp="20140618 13:19:35.648" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20140618 13:19:35.653" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20140618 13:19:35.653" starttime="20140618 13:19:35.639"></status>
+</kw>
+<doc>Doing purchases with the same goods but with different payment and shipping methods</doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140618 13:19:35.653" critical="yes" starttime="20140618 13:19:35.638">No browser is open</status>
+</test>
+<test id="s1-t3" name="Multiple payment method 1.1">
 <kw type="kw" name="Selenium2Library.Open Browser">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
 <arg>http://www.isex.com.ua/</arg>
 <arg>browser=chrome</arg>
 </arguments>
-<msg timestamp="20140609 17:54:20.898" level="INFO">Opening browser 'chrome' to base url 'http://www.isex.com.ua/'</msg>
-<status status="PASS" endtime="20140609 17:55:00.558" starttime="20140609 17:54:20.897"></status>
+<msg timestamp="20140618 13:19:35.655" level="INFO">Opening browser 'chrome' to base url 'http://www.isex.com.ua/'</msg>
+<status status="PASS" endtime="20140618 13:19:39.779" starttime="20140618 13:19:35.655"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Set Window Size">
+<doc>Sets the `width` and `height` of the current window to the specified values.</doc>
+<arguments>
+<arg>${width}</arg>
+<arg>${height}</arg>
+</arguments>
+<status status="PASS" endtime="20140618 13:19:40.021" starttime="20140618 13:19:39.779"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="isfindedit"]</arg>
+<arg>смазка</arg>
+</arguments>
+<msg timestamp="20140618 13:19:40.022" level="INFO">Typing text 'смазка' into text field '//*[@id="isfindedit"]'</msg>
+<status status="PASS" endtime="20140618 13:19:40.169" starttime="20140618 13:19:40.021"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="issearchbut"]</arg>
+</arguments>
+<msg timestamp="20140618 13:19:40.169" level="INFO">Clicking button '//*[@id="issearchbut"]'.</msg>
+<status status="PASS" endtime="20140618 13:19:42.386" starttime="20140618 13:19:40.169"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img</arg>
+</arguments>
+<msg timestamp="20140618 13:19:42.386" level="INFO">Clicking element '//*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img'.</msg>
+<status status="PASS" endtime="20140618 13:19:44.668" starttime="20140618 13:19:42.386"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:19:44.668" level="INFO">Clicking element '//*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:19:46.044" starttime="20140618 13:19:44.668"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a</arg>
+</arguments>
+<msg timestamp="20140618 13:19:46.063" level="INFO">Current page contains element '//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a'.</msg>
+<status status="PASS" endtime="20140618 13:19:46.063" starttime="20140618 13:19:46.044"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>249</arg>
+</arguments>
+<msg timestamp="20140618 13:19:46.079" level="INFO">Current page contains text '249'.</msg>
+<status status="PASS" endtime="20140618 13:19:46.080" starttime="20140618 13:19:46.064"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:19:46.080" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:19:47.259" starttime="20140618 13:19:46.080"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=first_name</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20140618 13:19:47.260" level="INFO">Typing text 'test' into text field 'name=first_name'</msg>
+<status status="PASS" endtime="20140618 13:19:47.384" starttime="20140618 13:19:47.259"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=phone</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20140618 13:19:47.385" level="INFO">Typing text 'test' into text field 'name=phone'</msg>
+<status status="PASS" endtime="20140618 13:19:47.479" starttime="20140618 13:19:47.384"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Select From List">
+<doc>Selects `*items` from list identified by `locator`</doc>
+<arguments>
+<arg>//*[@id="List1"]</arg>
+<arg>1d</arg>
+</arguments>
+<msg timestamp="20140618 13:19:47.480" level="INFO">Selecting option(s) '1d' from list '//*[@id="List1"]'.</msg>
+<status status="PASS" endtime="20140618 13:19:47.535" starttime="20140618 13:19:47.479"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Image">
+<doc>Clicks an image found by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:19:47.536" level="INFO">Clicking image '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:19:49.139" starttime="20140618 13:19:47.535"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>274 грн.</arg>
+</arguments>
+<msg timestamp="20140618 13:19:49.158" level="INFO">Current page contains text '274 грн.'.</msg>
+<status status="PASS" endtime="20140618 13:19:49.158" starttime="20140618 13:19:49.139"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img</arg>
+</arguments>
+<msg timestamp="20140618 13:19:49.158" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img'.</msg>
+<status status="PASS" endtime="20140618 13:19:50.334" starttime="20140618 13:19:49.158"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140618 13:19:50.391" starttime="20140618 13:19:50.334"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140618 13:19:50.392" critical="yes" starttime="20140618 13:19:35.653"></status>
+</test>
+<test id="s1-t4" name="Multiple payment method 1.2">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://www.isex.com.ua/</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20140618 13:19:50.394" level="INFO">Opening browser 'chrome' to base url 'http://www.isex.com.ua/'</msg>
+<status status="PASS" endtime="20140618 13:19:54.770" starttime="20140618 13:19:50.393"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Set Window Size">
+<doc>Sets the `width` and `height` of the current window to the specified values.</doc>
+<arguments>
+<arg>${width}</arg>
+<arg>${height}</arg>
+</arguments>
+<status status="PASS" endtime="20140618 13:19:55.010" starttime="20140618 13:19:54.771"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="isfindedit"]</arg>
+<arg>смазка</arg>
+</arguments>
+<msg timestamp="20140618 13:19:55.010" level="INFO">Typing text 'смазка' into text field '//*[@id="isfindedit"]'</msg>
+<status status="PASS" endtime="20140618 13:19:55.162" starttime="20140618 13:19:55.010"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="issearchbut"]</arg>
+</arguments>
+<msg timestamp="20140618 13:19:55.163" level="INFO">Clicking button '//*[@id="issearchbut"]'.</msg>
+<status status="PASS" endtime="20140618 13:19:57.510" starttime="20140618 13:19:55.163"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img</arg>
+</arguments>
+<msg timestamp="20140618 13:19:57.511" level="INFO">Clicking element '//*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img'.</msg>
+<status status="PASS" endtime="20140618 13:19:59.800" starttime="20140618 13:19:57.511"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:19:59.800" level="INFO">Clicking element '//*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:20:01.126" starttime="20140618 13:19:59.800"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a</arg>
+</arguments>
+<msg timestamp="20140618 13:20:01.148" level="INFO">Current page contains element '//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a'.</msg>
+<status status="PASS" endtime="20140618 13:20:01.148" starttime="20140618 13:20:01.127"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>249</arg>
+</arguments>
+<msg timestamp="20140618 13:20:01.168" level="INFO">Current page contains text '249'.</msg>
+<status status="PASS" endtime="20140618 13:20:01.168" starttime="20140618 13:20:01.149"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:20:01.169" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:20:02.438" starttime="20140618 13:20:01.169"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=first_name</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20140618 13:20:02.439" level="INFO">Typing text 'test' into text field 'name=first_name'</msg>
+<status status="PASS" endtime="20140618 13:20:02.574" starttime="20140618 13:20:02.439"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=phone</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20140618 13:20:02.574" level="INFO">Typing text 'test' into text field 'name=phone'</msg>
+<status status="PASS" endtime="20140618 13:20:02.686" starttime="20140618 13:20:02.574"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Select From List">
+<doc>Selects `*items` from list identified by `locator`</doc>
+<arguments>
+<arg>//*[@id="List1"]</arg>
+<arg>6d</arg>
+</arguments>
+<msg timestamp="20140618 13:20:02.687" level="INFO">Selecting option(s) '6d' from list '//*[@id="List1"]'.</msg>
+<status status="PASS" endtime="20140618 13:20:02.813" starttime="20140618 13:20:02.686"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Image">
+<doc>Clicks an image found by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:20:02.813" level="INFO">Clicking image '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:20:04.216" starttime="20140618 13:20:02.813"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>274 грн.</arg>
+</arguments>
+<msg timestamp="20140618 13:20:04.239" level="INFO">Current page contains text '274 грн.'.</msg>
+<status status="PASS" endtime="20140618 13:20:04.239" starttime="20140618 13:20:04.216"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img</arg>
+</arguments>
+<msg timestamp="20140618 13:20:04.239" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img'.</msg>
+<status status="PASS" endtime="20140618 13:20:05.444" starttime="20140618 13:20:04.239"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140618 13:20:05.501" starttime="20140618 13:20:05.444"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140618 13:20:05.501" critical="yes" starttime="20140618 13:19:50.392"></status>
+</test>
+<test id="s1-t5" name="Multiple payment method 1.3">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://www.isex.com.ua/</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20140618 13:20:05.503" level="INFO">Opening browser 'chrome' to base url 'http://www.isex.com.ua/'</msg>
+<status status="PASS" endtime="20140618 13:20:09.439" starttime="20140618 13:20:05.502"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Set Window Size">
+<doc>Sets the `width` and `height` of the current window to the specified values.</doc>
+<arguments>
+<arg>${width}</arg>
+<arg>${height}</arg>
+</arguments>
+<status status="PASS" endtime="20140618 13:20:09.659" starttime="20140618 13:20:09.439"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="isfindedit"]</arg>
+<arg>смазка</arg>
+</arguments>
+<msg timestamp="20140618 13:20:09.660" level="INFO">Typing text 'смазка' into text field '//*[@id="isfindedit"]'</msg>
+<status status="PASS" endtime="20140618 13:20:09.785" starttime="20140618 13:20:09.659"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="issearchbut"]</arg>
+</arguments>
+<msg timestamp="20140618 13:20:09.785" level="INFO">Clicking button '//*[@id="issearchbut"]'.</msg>
+<status status="PASS" endtime="20140618 13:20:11.999" starttime="20140618 13:20:09.785"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img</arg>
+</arguments>
+<msg timestamp="20140618 13:20:12.000" level="INFO">Clicking element '//*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img'.</msg>
+<status status="PASS" endtime="20140618 13:20:15.187" starttime="20140618 13:20:12.000"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:20:15.188" level="INFO">Clicking element '//*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:20:17.210" starttime="20140618 13:20:15.188"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a</arg>
+</arguments>
+<msg timestamp="20140618 13:20:17.230" level="INFO">Current page contains element '//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a'.</msg>
+<status status="PASS" endtime="20140618 13:20:17.230" starttime="20140618 13:20:17.210"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>249</arg>
+</arguments>
+<msg timestamp="20140618 13:20:17.247" level="INFO">Current page contains text '249'.</msg>
+<status status="PASS" endtime="20140618 13:20:17.247" starttime="20140618 13:20:17.230"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:20:17.247" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:20:19.063" starttime="20140618 13:20:17.247"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=first_name</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20140618 13:20:19.064" level="INFO">Typing text 'test' into text field 'name=first_name'</msg>
+<status status="PASS" endtime="20140618 13:20:19.202" starttime="20140618 13:20:19.063"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=phone</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20140618 13:20:19.202" level="INFO">Typing text 'test' into text field 'name=phone'</msg>
+<status status="PASS" endtime="20140618 13:20:19.298" starttime="20140618 13:20:19.202"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Select From List">
+<doc>Selects `*items` from list identified by `locator`</doc>
+<arguments>
+<arg>//*[@id="List1"]</arg>
+<arg>2d</arg>
+</arguments>
+<msg timestamp="20140618 13:20:19.298" level="INFO">Selecting option(s) '2d' from list '//*[@id="List1"]'.</msg>
+<status status="PASS" endtime="20140618 13:20:19.419" starttime="20140618 13:20:19.298"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Image">
+<doc>Clicks an image found by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:20:19.420" level="INFO">Clicking image '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:20:21.044" starttime="20140618 13:20:19.420"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>274 грн.</arg>
+</arguments>
+<msg timestamp="20140618 13:20:21.064" level="INFO">Current page contains text '274 грн.'.</msg>
+<status status="PASS" endtime="20140618 13:20:21.064" starttime="20140618 13:20:21.044"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img</arg>
+</arguments>
+<msg timestamp="20140618 13:20:21.065" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img'.</msg>
+<status status="PASS" endtime="20140618 13:20:22.552" starttime="20140618 13:20:21.064"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140618 13:20:22.608" starttime="20140618 13:20:22.552"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140618 13:20:22.609" critical="yes" starttime="20140618 13:20:05.502"></status>
+</test>
+<test id="s1-t6" name="Multiple payment method 1.4">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://www.isex.com.ua/</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20140618 13:20:22.610" level="INFO">Opening browser 'chrome' to base url 'http://www.isex.com.ua/'</msg>
+<status status="PASS" endtime="20140618 13:20:26.752" starttime="20140618 13:20:22.610"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Set Window Size">
+<doc>Sets the `width` and `height` of the current window to the specified values.</doc>
+<arguments>
+<arg>${width}</arg>
+<arg>${height}</arg>
+</arguments>
+<status status="PASS" endtime="20140618 13:20:26.989" starttime="20140618 13:20:26.753"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="isfindedit"]</arg>
+<arg>смазка</arg>
+</arguments>
+<msg timestamp="20140618 13:20:26.990" level="INFO">Typing text 'смазка' into text field '//*[@id="isfindedit"]'</msg>
+<status status="PASS" endtime="20140618 13:20:27.110" starttime="20140618 13:20:26.990"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="issearchbut"]</arg>
+</arguments>
+<msg timestamp="20140618 13:20:27.110" level="INFO">Clicking button '//*[@id="issearchbut"]'.</msg>
+<status status="PASS" endtime="20140618 13:20:29.599" starttime="20140618 13:20:27.110"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img</arg>
+</arguments>
+<msg timestamp="20140618 13:20:29.600" level="INFO">Clicking element '//*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img'.</msg>
+<status status="PASS" endtime="20140618 13:20:31.933" starttime="20140618 13:20:29.599"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:20:31.933" level="INFO">Clicking element '//*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:20:33.283" starttime="20140618 13:20:31.933"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a</arg>
+</arguments>
+<msg timestamp="20140618 13:20:33.304" level="INFO">Current page contains element '//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a'.</msg>
+<status status="PASS" endtime="20140618 13:20:33.304" starttime="20140618 13:20:33.284"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>249</arg>
+</arguments>
+<msg timestamp="20140618 13:20:33.317" level="INFO">Current page contains text '249'.</msg>
+<status status="PASS" endtime="20140618 13:20:33.317" starttime="20140618 13:20:33.304"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:20:33.317" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:20:34.622" starttime="20140618 13:20:33.317"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=first_name</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20140618 13:20:34.622" level="INFO">Typing text 'test' into text field 'name=first_name'</msg>
+<status status="PASS" endtime="20140618 13:20:34.722" starttime="20140618 13:20:34.622"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=phone</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20140618 13:20:34.723" level="INFO">Typing text 'test' into text field 'name=phone'</msg>
+<status status="PASS" endtime="20140618 13:20:34.822" starttime="20140618 13:20:34.722"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Select From List">
+<doc>Selects `*items` from list identified by `locator`</doc>
+<arguments>
+<arg>//*[@id="List1"]</arg>
+<arg>3d</arg>
+</arguments>
+<msg timestamp="20140618 13:20:34.822" level="INFO">Selecting option(s) '3d' from list '//*[@id="List1"]'.</msg>
+<status status="PASS" endtime="20140618 13:20:34.933" starttime="20140618 13:20:34.822"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Image">
+<doc>Clicks an image found by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:20:34.933" level="INFO">Clicking image '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:20:38.697" starttime="20140618 13:20:34.933"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>349 грн.</arg>
+</arguments>
+<msg timestamp="20140618 13:20:38.712" level="INFO">Current page contains text '349 грн.'.</msg>
+<status status="PASS" endtime="20140618 13:20:38.713" starttime="20140618 13:20:38.697"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img</arg>
+</arguments>
+<msg timestamp="20140618 13:20:38.713" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img'.</msg>
+<status status="PASS" endtime="20140618 13:20:39.873" starttime="20140618 13:20:38.713"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140618 13:20:39.931" starttime="20140618 13:20:39.873"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140618 13:20:39.931" critical="yes" starttime="20140618 13:20:22.609"></status>
+</test>
+<test id="s1-t7" name="Multiple payment method 1.5">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://www.isex.com.ua/</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20140618 13:20:39.933" level="INFO">Opening browser 'chrome' to base url 'http://www.isex.com.ua/'</msg>
+<status status="PASS" endtime="20140618 13:20:44.469" starttime="20140618 13:20:39.933"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Set Window Size">
+<doc>Sets the `width` and `height` of the current window to the specified values.</doc>
+<arguments>
+<arg>${width}</arg>
+<arg>${height}</arg>
+</arguments>
+<status status="PASS" endtime="20140618 13:20:44.704" starttime="20140618 13:20:44.469"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="isfindedit"]</arg>
+<arg>смазка</arg>
+</arguments>
+<msg timestamp="20140618 13:20:44.704" level="INFO">Typing text 'смазка' into text field '//*[@id="isfindedit"]'</msg>
+<status status="PASS" endtime="20140618 13:20:44.844" starttime="20140618 13:20:44.704"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="issearchbut"]</arg>
+</arguments>
+<msg timestamp="20140618 13:20:44.844" level="INFO">Clicking button '//*[@id="issearchbut"]'.</msg>
+<status status="PASS" endtime="20140618 13:20:47.018" starttime="20140618 13:20:44.844"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img</arg>
+</arguments>
+<msg timestamp="20140618 13:20:47.019" level="INFO">Clicking element '//*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img'.</msg>
+<status status="PASS" endtime="20140618 13:20:50.206" starttime="20140618 13:20:47.018"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:20:50.207" level="INFO">Clicking element '//*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:20:51.564" starttime="20140618 13:20:50.207"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a</arg>
+</arguments>
+<msg timestamp="20140618 13:20:51.583" level="INFO">Current page contains element '//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a'.</msg>
+<status status="PASS" endtime="20140618 13:20:51.584" starttime="20140618 13:20:51.565"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>249</arg>
+</arguments>
+<msg timestamp="20140618 13:20:51.599" level="INFO">Current page contains text '249'.</msg>
+<status status="PASS" endtime="20140618 13:20:51.599" starttime="20140618 13:20:51.584"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:20:51.599" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:20:52.848" starttime="20140618 13:20:51.599"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=first_name</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20140618 13:20:52.849" level="INFO">Typing text 'test' into text field 'name=first_name'</msg>
+<status status="PASS" endtime="20140618 13:20:52.979" starttime="20140618 13:20:52.848"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=phone</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20140618 13:20:52.979" level="INFO">Typing text 'test' into text field 'name=phone'</msg>
+<status status="PASS" endtime="20140618 13:20:53.086" starttime="20140618 13:20:52.979"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Select From List">
+<doc>Selects `*items` from list identified by `locator`</doc>
+<arguments>
+<arg>//*[@id="List1"]</arg>
+<arg>4d</arg>
+</arguments>
+<msg timestamp="20140618 13:20:53.087" level="INFO">Selecting option(s) '4d' from list '//*[@id="List1"]'.</msg>
+<status status="PASS" endtime="20140618 13:20:53.215" starttime="20140618 13:20:53.087"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Image">
+<doc>Clicks an image found by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:20:53.215" level="INFO">Clicking image '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:20:54.818" starttime="20140618 13:20:53.215"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>274 грн.</arg>
+</arguments>
+<msg timestamp="20140618 13:20:54.837" level="INFO">Current page contains text '274 грн.'.</msg>
+<status status="PASS" endtime="20140618 13:20:54.837" starttime="20140618 13:20:54.819"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img</arg>
+</arguments>
+<msg timestamp="20140618 13:20:54.837" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img'.</msg>
+<status status="PASS" endtime="20140618 13:20:56.055" starttime="20140618 13:20:54.837"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140618 13:20:56.111" starttime="20140618 13:20:56.056"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140618 13:20:56.111" critical="yes" starttime="20140618 13:20:39.932"></status>
+</test>
+<test id="s1-t8" name="Multiple payment method 2.3">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://www.isex.com.ua/</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20140618 13:20:56.113" level="INFO">Opening browser 'chrome' to base url 'http://www.isex.com.ua/'</msg>
+<status status="PASS" endtime="20140618 13:21:00.835" starttime="20140618 13:20:56.113"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Set Window Size">
+<doc>Sets the `width` and `height` of the current window to the specified values.</doc>
+<arguments>
+<arg>${width}</arg>
+<arg>${height}</arg>
+</arguments>
+<status status="PASS" endtime="20140618 13:21:01.076" starttime="20140618 13:21:00.836"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="isfindedit"]</arg>
+<arg>смазка</arg>
+</arguments>
+<msg timestamp="20140618 13:21:01.076" level="INFO">Typing text 'смазка' into text field '//*[@id="isfindedit"]'</msg>
+<status status="PASS" endtime="20140618 13:21:01.211" starttime="20140618 13:21:01.076"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="issearchbut"]</arg>
+</arguments>
+<msg timestamp="20140618 13:21:01.212" level="INFO">Clicking button '//*[@id="issearchbut"]'.</msg>
+<status status="PASS" endtime="20140618 13:21:03.977" starttime="20140618 13:21:01.211"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img</arg>
+</arguments>
+<msg timestamp="20140618 13:21:03.978" level="INFO">Clicking element '//*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img'.</msg>
+<status status="PASS" endtime="20140618 13:21:06.621" starttime="20140618 13:21:03.978"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:21:06.621" level="INFO">Clicking element '//*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:21:08.227" starttime="20140618 13:21:06.621"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a</arg>
+</arguments>
+<msg timestamp="20140618 13:21:08.247" level="INFO">Current page contains element '//*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a'.</msg>
+<status status="PASS" endtime="20140618 13:21:08.247" starttime="20140618 13:21:08.227"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>249</arg>
+</arguments>
+<msg timestamp="20140618 13:21:08.264" level="INFO">Current page contains text '249'.</msg>
+<status status="PASS" endtime="20140618 13:21:08.264" starttime="20140618 13:21:08.247"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:21:08.264" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:21:09.517" starttime="20140618 13:21:08.264"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=first_name</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20140618 13:21:09.517" level="INFO">Typing text 'test' into text field 'name=first_name'</msg>
+<status status="PASS" endtime="20140618 13:21:09.656" starttime="20140618 13:21:09.517"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=phone</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20140618 13:21:09.657" level="INFO">Typing text 'test' into text field 'name=phone'</msg>
+<status status="PASS" endtime="20140618 13:21:09.756" starttime="20140618 13:21:09.657"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Select From List">
+<doc>Selects `*items` from list identified by `locator`</doc>
+<arguments>
+<arg>//*[@id="List1"]</arg>
+<arg>4d</arg>
+</arguments>
+<msg timestamp="20140618 13:21:09.756" level="INFO">Selecting option(s) '4d' from list '//*[@id="List1"]'.</msg>
+<status status="PASS" endtime="20140618 13:21:09.877" starttime="20140618 13:21:09.756"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Select From List">
+<doc>Selects `*items` from list identified by `locator`</doc>
+<arguments>
+<arg>//*[@id="List2"]</arg>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20140618 13:21:09.877" level="INFO">Selecting option(s) '4' from list '//*[@id="List2"]'.</msg>
+<status status="PASS" endtime="20140618 13:21:10.082" starttime="20140618 13:21:09.877"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Image">
+<doc>Clicks an image found by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:21:10.082" level="INFO">Clicking image '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:21:12.046" starttime="20140618 13:21:10.082"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>274 грн.</arg>
+</arguments>
+<msg timestamp="20140618 13:21:12.066" level="INFO">Current page contains text '274 грн.'.</msg>
+<status status="PASS" endtime="20140618 13:21:12.066" starttime="20140618 13:21:12.046"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img</arg>
+</arguments>
+<msg timestamp="20140618 13:21:12.067" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img'.</msg>
+<status status="PASS" endtime="20140618 13:21:13.616" starttime="20140618 13:21:12.067"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140618 13:21:13.674" starttime="20140618 13:21:13.617"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140618 13:21:13.674" critical="yes" starttime="20140618 13:20:56.112"></status>
+</test>
+<test id="s1-t9" name="filter">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://www.isex.com.ua/</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20140618 13:21:13.676" level="INFO">Opening browser 'chrome' to base url 'http://www.isex.com.ua/'</msg>
+<status status="PASS" endtime="20140618 13:21:18.090" starttime="20140618 13:21:13.676"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Click Element">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>//*[@id="menu"]/li[2]/a/div</arg>
 </arguments>
-<msg timestamp="20140609 17:55:00.559" level="INFO">Clicking element '//*[@id="menu"]/li[2]/a/div'.</msg>
-<status status="PASS" endtime="20140609 17:55:02.144" starttime="20140609 17:55:00.559"></status>
+<msg timestamp="20140618 13:21:18.091" level="INFO">Clicking element '//*[@id="menu"]/li[2]/a/div'.</msg>
+<status status="PASS" endtime="20140618 13:21:19.915" starttime="20140618 13:21:18.090"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Drag And Drop By Offset">
 <doc>Drags element identified with `source` which is a locator.</doc>
@@ -254,7 +1258,7 @@
 <arg>100</arg>
 <arg>0</arg>
 </arguments>
-<status status="PASS" endtime="20140609 17:55:02.241" starttime="20140609 17:55:02.144"></status>
+<status status="PASS" endtime="20140618 13:21:20.012" starttime="20140618 13:21:19.916"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Drag And Drop By Offset">
 <doc>Drags element identified with `source` which is a locator.</doc>
@@ -263,39 +1267,39 @@
 <arg>25</arg>
 <arg>0</arg>
 </arguments>
-<status status="PASS" endtime="20140609 17:55:02.288" starttime="20140609 17:55:02.241"></status>
+<status status="PASS" endtime="20140618 13:21:20.064" starttime="20140618 13:21:20.012"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Select Checkbox">
 <doc>Selects checkbox identified by `locator`.</doc>
 <arguments>
 <arg>name=ftv_id_79</arg>
 </arguments>
-<msg timestamp="20140609 17:55:02.289" level="INFO">Selecting checkbox 'name=ftv_id_79'.</msg>
-<status status="PASS" endtime="20140609 17:55:02.433" starttime="20140609 17:55:02.289"></status>
+<msg timestamp="20140618 13:21:20.065" level="INFO">Selecting checkbox 'name=ftv_id_79'.</msg>
+<status status="PASS" endtime="20140618 13:21:20.201" starttime="20140618 13:21:20.064"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Select Checkbox">
 <doc>Selects checkbox identified by `locator`.</doc>
 <arguments>
 <arg>name=ftv_id_130</arg>
 </arguments>
-<msg timestamp="20140609 17:55:02.434" level="INFO">Selecting checkbox 'name=ftv_id_130'.</msg>
-<status status="PASS" endtime="20140609 17:55:02.515" starttime="20140609 17:55:02.434"></status>
+<msg timestamp="20140618 13:21:20.201" level="INFO">Selecting checkbox 'name=ftv_id_130'.</msg>
+<status status="PASS" endtime="20140618 13:21:20.275" starttime="20140618 13:21:20.201"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Select Checkbox">
 <doc>Selects checkbox identified by `locator`.</doc>
 <arguments>
 <arg>name=ftv_id_21</arg>
 </arguments>
-<msg timestamp="20140609 17:55:02.516" level="INFO">Selecting checkbox 'name=ftv_id_21'.</msg>
-<status status="PASS" endtime="20140609 17:55:02.577" starttime="20140609 17:55:02.516"></status>
+<msg timestamp="20140618 13:21:20.276" level="INFO">Selecting checkbox 'name=ftv_id_21'.</msg>
+<status status="PASS" endtime="20140618 13:21:20.359" starttime="20140618 13:21:20.275"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Click Image">
 <doc>Clicks an image found by `locator`.</doc>
 <arguments>
 <arg>//*[@id="filters"]/div[1]/input</arg>
 </arguments>
-<msg timestamp="20140609 17:55:02.577" level="INFO">Clicking image '//*[@id="filters"]/div[1]/input'.</msg>
-<status status="PASS" endtime="20140609 17:55:06.789" starttime="20140609 17:55:02.577"></status>
+<msg timestamp="20140618 13:21:20.359" level="INFO">Clicking image '//*[@id="filters"]/div[1]/input'.</msg>
+<status status="PASS" endtime="20140618 13:21:24.602" starttime="20140618 13:21:20.359"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Page Should Contain Element">
 <doc>Verifies element identified by `locator` is found on the current page.</doc>
@@ -303,8 +1307,8 @@
 <arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/center/h1</arg>
 <arg>loglevel=INFO</arg>
 </arguments>
-<msg timestamp="20140609 17:55:06.807" level="INFO">Current page contains element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/center/h1'.</msg>
-<status status="PASS" endtime="20140609 17:55:06.807" starttime="20140609 17:55:06.790"></status>
+<msg timestamp="20140618 13:21:24.617" level="INFO">Current page contains element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/center/h1'.</msg>
+<status status="PASS" endtime="20140618 13:21:24.617" starttime="20140618 13:21:24.602"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Page Should Contain Link">
 <doc>Verifies link identified by `locator` is found from current page.</doc>
@@ -312,44 +1316,495 @@
 <arg>http://www.isex.com.ua/dildos.html</arg>
 <arg>loglevel=INFO</arg>
 </arguments>
-<msg timestamp="20140609 17:55:06.825" level="INFO">Current page contains link 'http://www.isex.com.ua/dildos.html'.</msg>
-<status status="PASS" endtime="20140609 17:55:06.826" starttime="20140609 17:55:06.807"></status>
+<msg timestamp="20140618 13:21:24.640" level="INFO">Current page contains link 'http://www.isex.com.ua/dildos.html'.</msg>
+<status status="PASS" endtime="20140618 13:21:24.640" starttime="20140618 13:21:24.617"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Click Link">
 <doc>Clicks a link identified by locator.</doc>
 <arguments>
 <arg>http://www.isex.com.ua/dildos.html</arg>
 </arguments>
-<msg timestamp="20140609 17:55:06.826" level="INFO">Clicking link 'http://www.isex.com.ua/dildos.html'.</msg>
-<status status="PASS" endtime="20140609 17:55:07.940" starttime="20140609 17:55:06.826"></status>
+<msg timestamp="20140618 13:21:24.641" level="INFO">Clicking link 'http://www.isex.com.ua/dildos.html'.</msg>
+<status status="PASS" endtime="20140618 13:21:26.299" starttime="20140618 13:21:24.640"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Close All Browsers">
 <doc>Closes all open browsers and resets the browser cache.</doc>
 <arguments>
 </arguments>
-<status status="PASS" endtime="20140609 17:55:08.052" starttime="20140609 17:55:07.941"></status>
+<status status="PASS" endtime="20140618 13:21:26.356" starttime="20140618 13:21:26.300"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="PASS" endtime="20140609 17:55:08.052" critical="yes" starttime="20140609 17:54:19.480"></status>
+<status status="PASS" endtime="20140618 13:21:26.357" critical="yes" starttime="20140618 13:21:13.675"></status>
+</test>
+<test id="s1-t10" name="exclusive balls">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://www.isex.com.ua/</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20140618 13:21:26.358" level="INFO">Opening browser 'chrome' to base url 'http://www.isex.com.ua/'</msg>
+<status status="PASS" endtime="20140618 13:21:30.818" starttime="20140618 13:21:26.358"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="menu"]/li[17]/a/div</arg>
+</arguments>
+<msg timestamp="20140618 13:21:30.819" level="INFO">Clicking element '//*[@id="menu"]/li[17]/a/div'.</msg>
+<status status="PASS" endtime="20140618 13:21:32.764" starttime="20140618 13:21:30.819"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="menu"]/li[17]/ul/li[1]/a</arg>
+</arguments>
+<msg timestamp="20140618 13:21:32.764" level="INFO">Clicking element '//*[@id="menu"]/li[17]/ul/li[1]/a'.</msg>
+<status status="PASS" endtime="20140618 13:21:34.233" starttime="20140618 13:21:32.764"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[4]/div/table/tbody/tr/td[1]/span/a[3]</arg>
+</arguments>
+<msg timestamp="20140618 13:21:34.234" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[4]/div/table/tbody/tr/td[1]/span/a[3]'.</msg>
+<status status="PASS" endtime="20140618 13:21:35.390" starttime="20140618 13:21:34.234"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_3670"]/tbody/tr[1]/td[2]/div[1]/b/a</arg>
+</arguments>
+<msg timestamp="20140618 13:21:35.415" level="INFO">Current page contains element '//*[@id="instock_tab_3670"]/tbody/tr[1]/td[2]/div[1]/b/a'.</msg>
+<status status="PASS" endtime="20140618 13:21:35.415" starttime="20140618 13:21:35.391"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_10689"]/tbody/tr[1]/td[2]/div[1]/b/a</arg>
+</arguments>
+<msg timestamp="20140618 13:21:35.429" level="INFO">Current page contains element '//*[@id="instock_tab_10689"]/tbody/tr[1]/td[2]/div[1]/b/a'.</msg>
+<status status="PASS" endtime="20140618 13:21:35.429" starttime="20140618 13:21:35.415"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_8884"]/tbody/tr[1]/td[2]/div[1]/b/a</arg>
+</arguments>
+<msg timestamp="20140618 13:21:35.448" level="INFO">Current page contains element '//*[@id="instock_tab_8884"]/tbody/tr[1]/td[2]/div[1]/b/a'.</msg>
+<status status="PASS" endtime="20140618 13:21:35.448" starttime="20140618 13:21:35.429"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_11822"]/tbody/tr[1]/td[2]/div[1]/b/a</arg>
+</arguments>
+<msg timestamp="20140618 13:21:35.463" level="INFO">Current page contains element '//*[@id="instock_tab_11822"]/tbody/tr[1]/td[2]/div[1]/b/a'.</msg>
+<status status="PASS" endtime="20140618 13:21:35.463" starttime="20140618 13:21:35.448"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_13225"]/tbody/tr[1]/td[2]/div[1]/b/a</arg>
+</arguments>
+<msg timestamp="20140618 13:21:35.479" level="INFO">Current page contains element '//*[@id="instock_tab_13225"]/tbody/tr[1]/td[2]/div[1]/b/a'.</msg>
+<status status="PASS" endtime="20140618 13:21:35.479" starttime="20140618 13:21:35.463"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_12704"]/tbody/tr[1]/td[2]/div[1]/b/a</arg>
+</arguments>
+<msg timestamp="20140618 13:21:35.498" level="INFO">Current page contains element '//*[@id="instock_tab_12704"]/tbody/tr[1]/td[2]/div[1]/b/a'.</msg>
+<status status="PASS" endtime="20140618 13:21:35.498" starttime="20140618 13:21:35.479"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Get Count">
+<doc>Returns and logs how many times `item2` is found from `item1`.</doc>
+<arguments>
+<arg>Эксклюзивные вагинальные шарики</arg>
+<arg>вагинальные шарики</arg>
+</arguments>
+<msg timestamp="20140618 13:21:35.498" level="INFO">Item found from the first item 1 time</msg>
+<status status="PASS" endtime="20140618 13:21:35.498" starttime="20140618 13:21:35.498"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140618 13:21:35.498" critical="yes" starttime="20140618 13:21:26.357"></status>
+</test>
+<test id="s1-t11" name="comment">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://www.isex.com.ua/</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20140618 13:21:35.499" level="INFO">Opening browser 'chrome' to base url 'http://www.isex.com.ua/'</msg>
+<status status="PASS" endtime="20140618 13:21:39.836" starttime="20140618 13:21:35.499"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[1]/div[3]/div/ul/li[1]/a</arg>
+</arguments>
+<msg timestamp="20140618 13:21:39.837" level="INFO">Clicking element '//*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[1]/div[3]/div/ul/li[1]/a'.</msg>
+<status status="PASS" endtime="20140618 13:21:41.131" starttime="20140618 13:21:39.836"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Link">
+<doc>Verifies link identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>http://www.isex.com.ua/reviews.html</arg>
+</arguments>
+<msg timestamp="20140618 13:21:41.154" level="INFO">Current page contains link 'http://www.isex.com.ua/reviews.html'.</msg>
+<status status="PASS" endtime="20140618 13:21:41.154" starttime="20140618 13:21:41.131"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Отзывы о магазине</arg>
+</arguments>
+<msg timestamp="20140618 13:21:41.178" level="INFO">Current page contains text 'Отзывы о магазине'.</msg>
+<status status="PASS" endtime="20140618 13:21:41.178" starttime="20140618 13:21:41.154"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="comm_name"]</arg>
+</arguments>
+<msg timestamp="20140618 13:21:41.192" level="INFO">Current page contains element '//*[@id="comm_name"]'.</msg>
+<status status="PASS" endtime="20140618 13:21:41.192" starttime="20140618 13:21:41.178"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="comm_email"]</arg>
+</arguments>
+<msg timestamp="20140618 13:21:41.206" level="INFO">Current page contains element '//*[@id="comm_email"]'.</msg>
+<status status="PASS" endtime="20140618 13:21:41.207" starttime="20140618 13:21:41.192"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="comm_text"]</arg>
+</arguments>
+<msg timestamp="20140618 13:21:41.220" level="INFO">Current page contains element '//*[@id="comm_text"]'.</msg>
+<status status="PASS" endtime="20140618 13:21:41.220" starttime="20140618 13:21:41.207"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="reviewsblock"]/div/div[2]/form/div[2]/input</arg>
+</arguments>
+<msg timestamp="20140618 13:21:41.238" level="INFO">Current page contains element '//*[@id="reviewsblock"]/div/div[2]/form/div[2]/input'.</msg>
+<status status="PASS" endtime="20140618 13:21:41.238" starttime="20140618 13:21:41.221"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140618 13:21:41.351" starttime="20140618 13:21:41.238"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140618 13:21:41.351" critical="yes" starttime="20140618 13:21:35.499"></status>
+</test>
+<test id="s1-t12" name="english support">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://www.isex.com.ua/</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20140618 13:21:41.353" level="INFO">Opening browser 'chrome' to base url 'http://www.isex.com.ua/'</msg>
+<status status="PASS" endtime="20140618 13:21:45.778" starttime="20140618 13:21:41.353"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Image">
+<doc>Clicks an image found by `locator`.</doc>
+<arguments>
+<arg>http://www.isex.com.ua/images/ensupport.png</arg>
+</arguments>
+<msg timestamp="20140618 13:21:45.779" level="INFO">Clicking image 'http://www.isex.com.ua/images/ensupport.png'.</msg>
+<status status="PASS" endtime="20140618 13:21:46.931" starttime="20140618 13:21:45.778"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>English support</arg>
+<arg>loglevel=INFO</arg>
+</arguments>
+<msg timestamp="20140618 13:21:46.951" level="INFO">Current page contains text 'English support'.</msg>
+<status status="PASS" endtime="20140618 13:21:46.951" starttime="20140618 13:21:46.932"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>We provide english speaking support via email only. Please do not hesitate to contact us</arg>
+<arg>loglevel=INFO</arg>
+</arguments>
+<msg timestamp="20140618 13:21:46.973" level="INFO">Current page contains text 'We provide english speaking support via email only. Please do not hesitate to contact us'.</msg>
+<status status="PASS" endtime="20140618 13:21:46.973" starttime="20140618 13:21:46.952"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Link">
+<doc>Verifies link identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>help@isex.com.ua</arg>
+<arg></arg>
+<arg>loglevel=INFO</arg>
+</arguments>
+<msg timestamp="20140618 13:21:46.996" level="INFO">Current page contains link 'help@isex.com.ua'.</msg>
+<status status="PASS" endtime="20140618 13:21:46.996" starttime="20140618 13:21:46.974"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140618 13:21:47.053" starttime="20140618 13:21:46.997"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140618 13:21:47.053" critical="yes" starttime="20140618 13:21:41.352"></status>
+</test>
+<test id="s1-t13" name="russian support">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://www.isex.com.ua/</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20140618 13:21:47.055" level="INFO">Opening browser 'chrome' to base url 'http://www.isex.com.ua/'</msg>
+<status status="PASS" endtime="20140618 13:21:52.067" starttime="20140618 13:21:47.055"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Link">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>http://www.isex.com.ua/help.html</arg>
+</arguments>
+<msg timestamp="20140618 13:21:52.067" level="INFO">Clicking link 'http://www.isex.com.ua/help.html'.</msg>
+<status status="PASS" endtime="20140618 13:21:53.248" starttime="20140618 13:21:52.067"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Помощь и контакты</arg>
+<arg>loglevel=INFO</arg>
+</arguments>
+<msg timestamp="20140618 13:21:53.262" level="INFO">Current page contains text 'Помощь и контакты'.</msg>
+<status status="PASS" endtime="20140618 13:21:53.262" starttime="20140618 13:21:53.248"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Мы постарались сделать процесс выбора и доставки товара простым и быстрым. Но мы работаем над этим дальше, ежедневно улучшая качество сервиса. Мы стараемся учитывать все ваши пожелания и критику. Если у вас есть таковые, или вы хотите задать любой вопрос – мы с радостью выслушаем вас. \</arg>
+<arg>loglevel=INFO</arg>
+</arguments>
+<msg timestamp="20140618 13:21:53.275" level="INFO">Current page contains text 'Мы постарались сделать процесс выбора и доставки товара простым и быстрым. Но мы работаем над этим дальше, ежедневно улучшая качество сервиса. Мы стараемся учитывать все ваши пожелания и критику. Если у вас есть таковые, или вы хотите задать любой вопрос – мы с радостью выслушаем вас. '.</msg>
+<status status="PASS" endtime="20140618 13:21:53.275" starttime="20140618 13:21:53.262"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>3610336</arg>
+<arg>loglevel=INFO</arg>
+</arguments>
+<msg timestamp="20140618 13:21:53.288" level="INFO">Current page contains text '3610336'.</msg>
+<status status="PASS" endtime="20140618 13:21:53.288" starttime="20140618 13:21:53.276"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>1650640</arg>
+<arg>loglevel=INFO</arg>
+</arguments>
+<msg timestamp="20140618 13:21:53.300" level="INFO">Current page contains text '1650640'.</msg>
+<status status="PASS" endtime="20140618 13:21:53.300" starttime="20140618 13:21:53.288"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>579508697</arg>
+<arg>loglevel=INFO</arg>
+</arguments>
+<msg timestamp="20140618 13:21:53.312" level="INFO">Current page contains text '579508697'.</msg>
+<status status="PASS" endtime="20140618 13:21:53.312" starttime="20140618 13:21:53.300"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Link">
+<doc>Verifies link identified by `locator` is found from current page.</doc>
+<arguments>
+<arg>help@isex.com.ua</arg>
+<arg></arg>
+<arg>loglevel=INFO</arg>
+</arguments>
+<msg timestamp="20140618 13:21:53.326" level="INFO">Current page contains link 'help@isex.com.ua'.</msg>
+<status status="PASS" endtime="20140618 13:21:53.327" starttime="20140618 13:21:53.312"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Понедельник-Пятница</arg>
+<arg>loglevel=INFO</arg>
+</arguments>
+<msg timestamp="20140618 13:21:53.340" level="INFO">Current page contains text 'Понедельник-Пятница'.</msg>
+<status status="PASS" endtime="20140618 13:21:53.340" starttime="20140618 13:21:53.327"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Заказы сделанные на выходных обрабатываются в понедельник.</arg>
+<arg>loglevel=INFO</arg>
+</arguments>
+<msg timestamp="20140618 13:21:53.353" level="INFO">Current page contains text 'Заказы сделанные на выходных обрабатываются в понедельник.'.</msg>
+<status status="PASS" endtime="20140618 13:21:53.353" starttime="20140618 13:21:53.340"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Пожалуйста, не стесняйтесь задавать нам любые вопросы. Мы с радостью ответим на них.</arg>
+<arg>loglevel=INFO</arg>
+</arguments>
+<msg timestamp="20140618 13:21:53.366" level="INFO">Current page contains text 'Пожалуйста, не стесняйтесь задавать нам любые вопросы. Мы с радостью ответим на них.'.</msg>
+<status status="PASS" endtime="20140618 13:21:53.366" starttime="20140618 13:21:53.353"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140618 13:21:53.421" starttime="20140618 13:21:53.366"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140618 13:21:53.421" critical="yes" starttime="20140618 13:21:47.054"></status>
+</test>
+<test id="s1-t14" name="exclusive vibrators">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://www.isex.com.ua/</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20140618 13:21:53.422" level="INFO">Opening browser 'chrome' to base url 'http://www.isex.com.ua/'</msg>
+<status status="PASS" endtime="20140618 13:21:57.605" starttime="20140618 13:21:53.422"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="menu"]/li[1]/a/div</arg>
+</arguments>
+<msg timestamp="20140618 13:21:57.605" level="INFO">Clicking element '//*[@id="menu"]/li[1]/a/div'.</msg>
+<status status="PASS" endtime="20140618 13:21:58.920" starttime="20140618 13:21:57.605"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="menu"]/li[1]/ul/li[1]/a</arg>
+</arguments>
+<msg timestamp="20140618 13:21:58.921" level="INFO">Clicking element '//*[@id="menu"]/li[1]/ul/li[1]/a'.</msg>
+<status status="PASS" endtime="20140618 13:22:00.968" starttime="20140618 13:21:58.921"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Эксклюзивные вибраторы - это не просто секс-игрушки</arg>
+</arguments>
+<msg timestamp="20140618 13:22:00.990" level="INFO">Current page contains text 'Эксклюзивные вибраторы - это не просто секс-игрушки'.</msg>
+<status status="PASS" endtime="20140618 13:22:00.990" starttime="20140618 13:22:00.968"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=order</arg>
+</arguments>
+<msg timestamp="20140618 13:22:00.991" level="INFO">Clicking element 'name=order'.</msg>
+<status status="PASS" endtime="20140618 13:22:01.090" starttime="20140618 13:22:00.991"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_4265"]/tbody/tr[1]/td[1]/div[2]</arg>
+</arguments>
+<msg timestamp="20140618 13:22:01.110" level="INFO">Current page contains element '//*[@id="instock_tab_4265"]/tbody/tr[1]/td[1]/div[2]'.</msg>
+<status status="PASS" endtime="20140618 13:22:01.110" starttime="20140618 13:22:01.090"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_8891"]/tbody/tr[1]/td[1]/a[1]/img</arg>
+</arguments>
+<msg timestamp="20140618 13:22:01.129" level="INFO">Current page contains element '//*[@id="instock_tab_8891"]/tbody/tr[1]/td[1]/a[1]/img'.</msg>
+<status status="PASS" endtime="20140618 13:22:01.129" starttime="20140618 13:22:01.110"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_8918"]/tbody/tr[1]/td[1]/a[1]/img</arg>
+</arguments>
+<msg timestamp="20140618 13:22:01.146" level="INFO">Current page contains element '//*[@id="instock_tab_8918"]/tbody/tr[1]/td[1]/a[1]/img'.</msg>
+<status status="PASS" endtime="20140618 13:22:01.147" starttime="20140618 13:22:01.129"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_3675"]/tbody/tr[1]/td[1]/a[1]/img</arg>
+</arguments>
+<msg timestamp="20140618 13:22:01.165" level="INFO">Current page contains element '//*[@id="instock_tab_3675"]/tbody/tr[1]/td[1]/a[1]/img'.</msg>
+<status status="PASS" endtime="20140618 13:22:01.165" starttime="20140618 13:22:01.147"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_7965"]/tbody/tr[1]/td[1]/a[1]/img</arg>
+</arguments>
+<msg timestamp="20140618 13:22:01.182" level="INFO">Current page contains element '//*[@id="instock_tab_7965"]/tbody/tr[1]/td[1]/a[1]/img'.</msg>
+<status status="PASS" endtime="20140618 13:22:01.182" starttime="20140618 13:22:01.165"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_11112"]/tbody/tr[1]/td[1]/a[1]/img</arg>
+</arguments>
+<msg timestamp="20140618 13:22:01.197" level="INFO">Current page contains element '//*[@id="instock_tab_11112"]/tbody/tr[1]/td[1]/a[1]/img'.</msg>
+<status status="PASS" endtime="20140618 13:22:01.197" starttime="20140618 13:22:01.182"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="instock_tab_10698"]/tbody/tr[1]/td[1]/a[1]/img</arg>
+</arguments>
+<msg timestamp="20140618 13:22:01.209" level="INFO">Current page contains element '//*[@id="instock_tab_10698"]/tbody/tr[1]/td[1]/a[1]/img'.</msg>
+<status status="PASS" endtime="20140618 13:22:01.209" starttime="20140618 13:22:01.197"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140618 13:22:01.265" starttime="20140618 13:22:01.209"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140618 13:22:01.265" critical="yes" starttime="20140618 13:21:53.421"></status>
 </test>
 <doc></doc>
 <metadata>
 </metadata>
-<status status="PASS" endtime="20140609 17:55:08.053" starttime="20140609 17:53:56.831"></status>
+<status status="FAIL" endtime="20140618 13:22:01.268" starttime="20140618 13:19:04.235"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="2">Critical Tests</stat>
-<stat fail="0" pass="2">All Tests</stat>
+<stat fail="1" pass="13">Critical Tests</stat>
+<stat fail="1" pass="13">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="0" pass="2" id="s1" name="Shop Testing">Shop Testing</stat>
+<stat fail="1" pass="13" id="s1" name="Shop Testing">Shop Testing</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20140618 13:19:35.648" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
 </errors>
 </robot>
