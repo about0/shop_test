@@ -5,7 +5,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="Robot Framework 2.8.4 (Python 2.7.6 on linux2)" name="Generator">
+<meta content="Robot Framework 2.8.5 (Python 2.7.6 on linux2)" name="Generator">
 <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAJEBoACtnfgA5cYYAERsiAEx2lAAbKkQAcazBACZCVwAcM1cAK0ucAAMDBQAnQncASG+FABkoVQAyWmgA6f8SgvH/Ij99+GLyIinyJfn/Yi//KSLzUy9iZogpIld3/4JVVTkid7vyUjNVNVJEAGOZ6Z7pXwAABpmZkRiLAAAGiJZpmGAAAEEt3SXdxAAATC7o/u3EAAC8MRZpjasAAAY1VVVTYAAABKqqqqpAAAAADKqq4AAAAAAAv4sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMADAADgAwAA4AcAAOAHAADgBwAAwAcAAOAHAADgDwAA8A8AAPg/AAD+fwAA">
 <style media="all" type="text/css">
 /* Generic and misc styles */
@@ -1516,25 +1516,25 @@ storage = function () {
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,0,[],[0,0,177033],[],[[4,0,1,0,[],[1,57,31345],[]],[5,0,1,6,[],[0,31403,15,7],[]],[8,0,1,0,[],[1,31418,14739],[]],[9,0,1,0,[],[1,46157,15109],[]],[10,0,1,0,[],[1,61267,17107],[]],[11,0,1,0,[],[1,78374,17322],[]],[12,0,1,0,[],[1,95697,16179],[]],[13,0,1,0,[],[1,111877,17562],[]],[14,0,1,0,[],[1,129440,12682],[]],[15,0,1,0,[],[1,142122,9141],[]],[16,0,1,0,[],[1,151264,5852],[]],[17,0,1,0,[],[1,157117,5701],[]],[18,0,1,0,[],[1,162819,6367],[]],[19,0,1,0,[],[1,169186,7844],[]]],[],[14,13,14,13]];
+window.output["suite"] = [1,2,3,0,[],[1,0,146204],[],[[4,0,1,0,[],[1,91,21160],[]],[5,0,1,0,[],[1,21251,12591],[]],[6,0,1,0,[],[1,33843,12656],[]],[7,0,1,0,[],[1,46499,12412],[]],[8,0,1,0,[],[1,58912,12368],[]],[9,0,1,0,[],[1,71280,13202],[]],[10,0,1,0,[],[1,84482,12641],[]],[11,0,1,0,[],[1,97123,16371],[]],[12,0,1,0,[],[1,113494,7824],[]],[13,0,1,0,[],[1,121318,6628],[]],[14,0,1,0,[],[1,127947,5252],[]],[15,0,1,0,[],[1,133199,5131],[]],[16,0,1,0,[],[1,138330,7871],[]]],[],[13,13,13,13]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*Shop Testing","*/home/about0/testing/shop_test/shop_testing.robot","*shop_testing.robot","*multiple purchases","*multiple variations","*<p>Doing purchases with the same goods but with different payment and shipping methods\x3c/p>","*No browser is open","*Multiple payment method 1.1","*Multiple payment method 1.2","*Multiple payment method 1.3","*Multiple payment method 1.4","*Multiple payment method 1.5","*Multiple payment method 2.3","*filter","*exclusive balls","*comment","*english support","*russian support","*exclusive vibrators"]);
+window.output["strings"] = window.output["strings"].concat(["*","*Shop Testing","*/home/about0/Dropbox/testing/shop_test/shop_testing.robot","*shop_testing.robot","*multiple purchases","*Multiple payment method 1.1","*Multiple payment method 1.2","*Multiple payment method 1.3","*Multiple payment method 1.4","*Multiple payment method 1.5","*Multiple payment method 2.3","*filter","*exclusive balls","*comment","*english support","*russian support","*exclusive vibrators"]);
 </script>
 <script type="text/javascript">
-window.output["generatedTimestamp"] = "20140618 13:22:01 GMT +03:00";
+window.output["generatedTimestamp"] = "20140619 10:50:17 GMT +03:00";
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:02:57","fail":1,"label":"Critical Tests","pass":13},{"elapsed":"00:02:57","fail":1,"label":"All Tests","pass":13}],[],[{"elapsed":"00:02:57","fail":1,"id":"s1","label":"Shop Testing","name":"Shop Testing","pass":13}]];
+window.output["stats"] = [[{"elapsed":"00:02:26","fail":0,"label":"Critical Tests","pass":13},{"elapsed":"00:02:26","fail":0,"label":"All Tests","pass":13}],[],[{"elapsed":"00:02:26","fail":0,"id":"s1","label":"Shop Testing","name":"Shop Testing","pass":13}]];
 </script>
 <script type="text/javascript">
-window.output["generatedMillis"] = 176765;
+window.output["generatedMillis"] = 145743;
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1403086744235;
+window.output["baseMillis"] = 1403164071257;
 </script>
 <script type="text/javascript">
 window.settings = {"background":{"fail":"#FF3333","nonCriticalFail":"#99FF66","pass":"#99FF66"},"logURL":"log.html","title":""};
@@ -1622,9 +1622,12 @@ function addCustomSortersForDetails() {
 }
 
 function showDetailsByHash() {
-    if (window.location.hash == window.prevLocationHash)
+    // Cannot use window.location.hash because Firefox incorrectly decodes it:
+    // http://stackoverflow.com/questions/1703552/encoding-of-window-location-hash
+    var hash = window.location.href.split('#').splice(1).join('#');
+    if (!hash || hash == window.prevLocationHash)
         return;
-    var parts = window.location.hash.substring(1).split('?');
+    var parts = hash.split('?');
     var name = parts.shift();
     var query = parts.join('?');
     if (name == 'search') {
@@ -1784,8 +1787,7 @@ function searchTests(suitePattern, testPattern, includePattern, excludePattern) 
 function scrollToSelector(base, query) {
     $('#test-details-container').css('min-height', $(window).height());
     var anchor = query ? base + '?' + encodeURIComponent(query) : base;
-    window.prevLocationHash = '#' + anchor;
-    window.location.hash = anchor;
+    window.location.hash = window.prevLocationHash = anchor;
 }
 
 function renderSelector(args, template, stats) {
@@ -2282,7 +2284,7 @@ function hideHiddenDetailsColumns(elem) {
   <tr>
     <th>Log File:</th>
     <td><a href="${$item.logURL}#${id}"
-           title="${fullName}">${$item.logURL}#${id}</a></td>
+           title="{{html fullName}}">${$item.logURL}#${id}</a></td>
   </tr>
   {{/if}}
 </script>
@@ -2328,12 +2330,12 @@ function hideHiddenDetailsColumns(elem) {
 
 <script type="text/x-jquery-tmpl" id="testDetailsTableRowTemplate">
   {{if $item.logURL}}
-  <tr onclick="location = '${$item.logURL}#${id}'" title="${fullName}">
+  <tr onclick="location = '${$item.logURL}#${id}'" title="{{html fullName}}">
     <td class="details-col-name">
       <div><a href="${$item.logURL}#${id}"><span class="parent-name">{{html formatParentName}}</span>{{html name}}</a></div>
     </td>
   {{else}}
-  <tr title="${fullName}">
+  <tr title="{{html fullName}}">
     <td class="details-col-name">
       <div><span class="parent-name">{{html formatParentName}}</span>{{html name}}</div>
     </td>

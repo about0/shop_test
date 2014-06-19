@@ -1,22 +1,29 @@
 *** Settings ***
 Library           Selenium2Library
+Library           Dialogs
+Library           string
+Library           RandomLibrary
 
 *** Variables ***
 ${name}           Test
 ${phone}          test
 ${width}          1280
 ${height}         1024
+${price}          ${EMPTY}
+${price after}    ${EMPTY}
+${shipping25}     25
+${shipping100}    100
 
 *** Test Cases ***
 multiple purchases
-    Open browser    http://www.isex.com.ua/    browser=chrome
+    Open browser    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/    browser=chrome
     click element    //*[@id="menu"]/li[5]/a/div
     click element    //*[@id="instock_tab_975"]/tbody/tr[1]/td[1]/a[1]/img
     page should contain element    //*[@id="instock_tab_975"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
     click element    //*[@id="instock_tab_975"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
     page should contain element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[1]/a/img
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[1]/a/img
-    click link    http://www.isex.com.ua/vagina/vagina-vibration.html
+    click link    //*[@id="menu"]/li[5]/ul/li[1]/a
     click element    //*[@id="instock_tab_949"]/tbody/tr[1]/td[1]/a[1]/img
     page should contain element    //*[@id="instock_tab_949"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
     click element    //*[@id="instock_tab_949"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
@@ -56,168 +63,148 @@ multiple purchases
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img
     close all browsers
 
-multiple variations
-    [Documentation]    Doing purchases with the same goods but with different payment and shipping methods
-    input text    //*[@id="isfindedit"]    смазка
-    click button    //*[@id="issearchbut"]
-    click element    //*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img
-    click element    //*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
-    page should contain element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a
-    page should contain    249
-    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input
-    input text    name=first_name    test
-    input text    //*[@id="isfindedit"]    смазка
-    click button    //*[@id="issearchbut"]
-    click element    //*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img
-    click element    //*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
-    page should contain element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a
-    page should contain    249
-    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input
-    input text    name=first_name    test
-    input text    name=phone    test
-    click element    //*[@id="List1"]
-    click element    //*[@id="List1"]/option[4]
-    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
-    page should contain    349 грн.
-    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img
-    input text    //*[@id="isfindedit"]    смазка
-    click button    //*[@id="issearchbut"]
-    click element    //*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img
-    click element    //*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
-    page should contain element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a
-    page should contain    249
-    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input
-    input text    name=first_name    test
-    input text    name=phone    test
-    click element    //*[@id="List1"]
-    click element    //*[@id="List1"]/option[5]
-    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
-    page should contain    274 грн.
-    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img
-    input text    //*[@id="isfindedit"]    смазка
-    click button    //*[@id="issearchbut"]
-    click element    //*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img
-    click element    //*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
-    page should contain element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a
-    page should contain    249
-    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input
-    input text    name=first_name    test
-    input text    name=phone    test
-    click element    //*[@id="List1"]
-    click element    //*[@id="List1"]/option[1]
-    click element    //*[@id="List2"]
-    click element    //*[@id="List2"]/option[3]
-    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
-    page should contain    274 грн.
-    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img
-    close all browsers
-
 Multiple payment method 1.1
-    Open browser    http://www.isex.com.ua/    browser=chrome
+    Open browser    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/    browser=chrome
     set window size    ${width}    ${height}
     input text    //*[@id="isfindedit"]    смазка
     click button    //*[@id="issearchbut"]
     click element    //*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img
+    ${price}=    Get Text    //*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[1]/strong[1]
+    Log    ${price}
     click element    //*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
     page should contain element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a
-    page should contain    249
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input
     input text    name=first_name    test
     input text    name=phone    test
     select from list    //*[@id="List1"]    1d
+    wait until element is visible    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
     click image    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
-    page should contain    274 грн.
+    page should contain    Оплата будет произведена наличными курьеру во время доставки заказа. Пожалуйста постарайтесь подготовить необходимую сумму без сдачи. После получения товара Вы должны убедиться в том, что Вы получили именно Ваш заказ и отдать курьеру необходимую сумму
+    Comment    page should contain    Вы выбрали курьерскую доставку по Киеву. В ближайшее время наш менеджер свяжется с Вами, чтобы уточнить все детали касательно доставки.
+    ${price after}=    evaluate    int(${price}+${shipping25})
+    Log    ${price after}
+    page should contain    ${price after}
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img
     Close all browsers
 
 Multiple payment method 1.2
-    Open Browser    http://www.isex.com.ua/    browser=chrome
+    Open browser    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/    browser=chrome
     set window size    ${width}    ${height}
     input text    //*[@id="isfindedit"]    смазка
     click button    //*[@id="issearchbut"]
     click element    //*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img
+    ${price}=    Get Text    //*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[1]/strong[1]
+    Log    ${price}
     click element    //*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
     page should contain element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a
-    page should contain    249
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input
     input text    name=first_name    test
     input text    name=phone    test
     select from list    //*[@id="List1"]    6d
+    wait until element is visible    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
     click image    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
-    page should contain    274 грн.
+    page should contain    Оплата будет произведена наличными курьеру во время доставки заказа. Пожалуйста постарайтесь подготовить необходимую сумму без сдачи. После получения товара Вы должны убедиться в том, что Вы получили именно Ваш заказ и отдать курьеру необходимую сумму
+    page should contain    Вы выбрали доставку на склад Новой почты \ . Заказ будет доставлен в течении 1-5 дней (в зависимости от города). В ближайшее время наш менеджер свяжется с Вами, чтобы уточнить все детали касательно доставки.
+    ${price after}=    evaluate    int(${price}+${shipping25})
+    Log    ${price after}
+    page should contain    ${price after}
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img
     Close all browsers
 
 Multiple payment method 1.3
-    Open Browser    http://www.isex.com.ua/    browser=chrome
+    Open browser    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/    browser=chrome
     set window size    ${width}    ${height}
     input text    //*[@id="isfindedit"]    смазка
     click button    //*[@id="issearchbut"]
     click element    //*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img
+    ${price}=    Get Text    //*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[1]/strong[1]
+    Log    ${price}
     click element    //*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
     page should contain element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a
-    page should contain    249
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input
     input text    name=first_name    test
     input text    name=phone    test
     select from list    //*[@id="List1"]    2d
+    wait until element is visible    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
     click image    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
-    page should contain    274 грн.
+    page should contain    Оплата будет произведена наличными курьеру во время доставки заказа. Пожалуйста постарайтесь подготовить необходимую сумму без сдачи. После получения товара Вы должны убедиться в том, что Вы получили именно Ваш заказ и отдать курьеру необходимую сумму
+    page should contain    Вы выбрали доставку на склад компании-перевозчика (Автолюкс, Интайм и др.). Заказ будет доставлен в течении 1-5 дней (в зависимости от города). В ближайшее время наш менеджер свяжется с Вами, чтобы уточнить все детали касательно доставки.
+    ${price after}=    evaluate    int(${price}+${shipping25})
+    Log    ${price after}
+    page should contain    ${price after}
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img
     Close all browsers
 
 Multiple payment method 1.4
-    Open Browser    http://www.isex.com.ua/    browser=chrome
+    Open browser    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/    browser=chrome
     set window size    ${width}    ${height}
     input text    //*[@id="isfindedit"]    смазка
     click button    //*[@id="issearchbut"]
     click element    //*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img
+    ${price}=    Get Text    //*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[1]/strong[1]
+    Log    ${price}
     click element    //*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
     page should contain element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a
-    page should contain    249
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input
     input text    name=first_name    test
     input text    name=phone    test
     select from list    //*[@id="List1"]    3d
+    wait until element is visible    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
     click image    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
-    page should contain    349 грн.
+    page should contain    Оплата будет произведена наличными курьеру во время доставки заказа. Пожалуйста постарайтесь подготовить необходимую сумму без сдачи. После получения товара Вы должны убедиться в том, что Вы получили именно Ваш заказ и отдать курьеру необходимую сумму
+    page should contain    Вы выбрали доставку курьером по адресу: Заказ будет доставлен в течении 1-5 дней (в зависимости от города). В ближайшее время наш менеджер свяжется с Вами, чтобы уточнить все детали касательно доставки.
+    ${price after}=    evaluate    int(${price}+${shipping100})
+    Log    ${price after}
+    page should contain    ${price after}
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img
     Close all browsers
 
 Multiple payment method 1.5
-    Open Browser    http://www.isex.com.ua/    browser=chrome
+    Open browser    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/    browser=chrome
     set window size    ${width}    ${height}
     input text    //*[@id="isfindedit"]    смазка
     click button    //*[@id="issearchbut"]
     click element    //*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img
+    ${price}=    Get Text    //*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[1]/strong[1]
+    Log    ${price}
     click element    //*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
     page should contain element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a
-    page should contain    249
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input
     input text    name=first_name    test
     input text    name=phone    test
     select from list    //*[@id="List1"]    4d
+    wait until element is visible    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
     click image    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
-    page should contain    274 грн.
+    page should contain    Вы выбрали доставку через УкрПочту по адресу
+    page should contain    Оплата будет произведена наличными курьеру во время доставки заказа. Пожалуйста постарайтесь подготовить необходимую сумму без сдачи. После получения товара Вы должны убедиться в том, что Вы получили именно Ваш заказ и отдать курьеру необходимую сумму
+    page should contain    Заказ будет доставлен в течении 3-7 дней (в зависимости от города). В ближайшее время наш менеджер свяжется с Вами, чтобы уточнить все детали касательно доставки.
+    ${price after}=    evaluate    int(${price}+${shipping25})
+    Log    ${price after}
+    page should contain    ${price after}
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img
     Close all browsers
 
 Multiple payment method 2.3
-    Open Browser    http://www.isex.com.ua/    browser=chrome
+    Open browser    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/    browser=chrome
     set window size    ${width}    ${height}
     input text    //*[@id="isfindedit"]    смазка
     click button    //*[@id="issearchbut"]
     click element    //*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img
+    ${price}=    Get Text    //*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[1]/strong[1]
+    Log    ${price}
     click element    //*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
     page should contain element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a
-    page should contain    249
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input
     input text    name=first_name    test
     input text    name=phone    test
     select from list    //*[@id="List1"]    4d
     select from list    //*[@id="List2"]    4
+    wait until element is visible    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
     click image    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
-    page should contain    274 грн.
+    page should contain    В ближайшее время с Вами свяжется наш менеджер и проинструктирует по поводу оплаты банковской картой
+    ${price after}=    evaluate    int(${price}+${shipping25})
+    Log    ${price after}
+    page should contain    ${price after}
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img
     Close all browsers
 
