@@ -1,7 +1,6 @@
 *** Settings ***
-Library           Selenium2Library
-Library           string
-Library           RandomLibrary
+Library           Selenium2Library    run_on_failure=Nothing
+Library           String
 
 *** Variables ***
 ${name}           Autotest
@@ -19,36 +18,29 @@ ${shipping}       ${EMPTY}
 *** Test Cases ***
 multiple purchases
     Open browser    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/    browser=chrome
-    click element    //*[@id="menu"]/li[5]/a/div
-    click element    //*[@id="instock_tab_975"]/tbody/tr[1]/td[1]/a[1]/img
-    page should contain element    //*[@id="instock_tab_975"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
-    click element    //*[@id="instock_tab_975"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
-    page should contain element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[1]/a/img
-    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[1]/a/img
-    click link    //*[@id="menu"]/li[5]/ul/li[1]/a
-    click element    //*[@id="instock_tab_949"]/tbody/tr[1]/td[1]/a[1]/img
-    page should contain element    //*[@id="instock_tab_949"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
-    click element    //*[@id="instock_tab_949"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
-    page should contain element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a
-    page should contain element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[3]/td[1]/a
+    click link    Женское белье
+    click element    //a [@href='http://www.isex.kiev.ua/product7095.html']
+    select from list    name=sizecolor    9095
+    click element    //input [@src='http://www.isex.kiev.ua/images/is_pdtobacketnew.gif']
+    page should contain    Цвет: красный
+    goto    http://www.isex.kiev.ua/
     input text    //*[@id="isfindedit"]    маска
     click button    //*[@id="issearchbut"]
     click element    //*[@id="instock_tab_1410"]/tbody/tr[1]/td[1]/a[1]/img
     click element    //*[@id="instock_tab_1410"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
-    page should contain element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a
-    page should contain element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[3]/td[1]/a
-    page should contain element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[4]/td[1]/a
+    page should contain    Цвет: красный
+    page should contain    Чулки Opaque highs with satin bow (Размер: One size, Цвет: красный)
+    page should contain    Латексная маска палача без разрезов
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[3]/b[2]/a/span
+    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[3]/b[1]/a/span
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[3]/td[3]/b[2]/a/span
-    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[4]/td[3]/b[2]/a/span
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input
-    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
     page should contain element    //*[@id="errmessfirst_name"]
     page should contain element    //*[@id="errmessphone"]
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[1]/a/img
-    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[3]/b[1]/a/span
+    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[3]/b[2]/a/span
+    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[3]/td[3]/b[2]/a/span
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[3]/td[3]/b[1]/a/span
-    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[4]/td[3]/b[1]/a/span
     click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input
     input text    id=first_name    ${name}
     input text    id=phone    ${phone}
@@ -351,6 +343,7 @@ category verifying
     page should contain element    //*[@id="instock_tab_12291"]/tbody/tr[1]/td[1]/a[1]/img
     Execute javascript    window.scrollTo(0,5000);
     page should contain element    //*[@id="instock_tab_10641"]/tbody/tr[1]/td[1]/a[1]/img
+    close all browsers
 
 Continuously loading
     Open Browser    http://www.isex.com.ua/    browser=chrome
@@ -535,4 +528,120 @@ exclusive vibrators
     page should contain element    //*[@id="instock_tab_7965"]/tbody/tr[1]/td[1]/a[1]/img
     page should contain element    //*[@id="instock_tab_11112"]/tbody/tr[1]/td[1]/a[1]/img
     page should contain element    //*[@id="instock_tab_10698"]/tbody/tr[1]/td[1]/a[1]/img
+    close all browsers
+
+admin
+    Open browser    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/admin.php    browser=chrome
+    set window size    ${width}    ${height}
+    input text    name=login    admin
+    input password    name=password    111
+    click element    //input [@type='submit' and \ @value="Login"]
+    click element    //a [@href='admin.php?dpt=catalog' and @class='mainsection']
+    page should contain element    //a [@href="admin.php?dpt=catalog&sub=products_categories&categoryID=0" and @class='bold']
+    click element    //a [@href="admin.php?dpt=catalog&sub=products_categories&categoryID=63"]
+    Wait until element is visible    //a [@href="javascript:open_window('category.php?w=-1',500,700);"]
+    click element    //a [@href="javascript:open_window('category.php?w=-1',500,700);"]
+    sleep    1
+    select window    title=Категории
+    wait until element is visible    //select [@name="parent"]
+    select from list    //select [@name="parent"]    63
+    input text    name=name    autotest
+    select checkbox    name=enabled
+    input text    name=desc    Automate regression testing description
+    input text    name=keywords    Вибраторы, эксклюзивные вибраторы
+    click element    //input [@type='submit' and @value='Сохранить']
+    click element    //a [@href='javascript:window.close();']
+    sleep    1
+    select window    title=iSex-kiev.com.ua
+    click link    Эксклюзивные вибраторы
+    click link    autotest
+    ${var0}=    get location
+    log    ${var0}
+    ${position}=    Get substring    ${var0}    -3
+    click element    //a [@href="javascript:open_window('products.php',550,600);"]
+    sleep    1
+    select window    title=Товары
+    Select from list    //select [@name='categoryID']    ${position}
+    input text    name=name    Black Overlord
+    input text    name=inprice_0    666
+    select from list    name=incash_0    2
+    input text    name=spprice_0    1337
+    select from list    name=instock    100
+    select from list    name=type_diller    8
+    click element    //input [@type='submit' and @value='Сохранить']
+    select window    title=iSex-kiev.com.ua
+    page should contain    Black Overlord
+    page should contain element    //input [@type='text' and@value='1337']
+    page should contain element    //input [@type='text' and@value='666']
+    page should contain    Loveyourself
+    Click element    //img [@src='images/backend/button_delete.gif']
+    sleep    1
+    confirm action
+    page should not contain    Black Overlord
+    page should not contain element    //input [@type='text' and@value='1337']
+    page should not contain element    //input [@type='text' and@value='666']
+    page should not contain    Loveyourself
+    click element    //a [@class='small' and @href="javascript:open_window('category.php?c_id=${position}&w=63',500,700);"]
+    select window    title=Категории
+    sleep    1
+    click element    //input [@type='button' and @value='Удалить']
+    confirm action
+    select window    title=iSex-kiev.com.ua
+    sleep    2
+    page should not contain    autotest
+    Close all browsers
+
+Order changing and canceling
+    Open browser    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/    browser=chrome
+    set window size    ${width}    ${height}
+    input text    //*[@id="isfindedit"]    смазка
+    click button    //*[@id="issearchbut"]
+    click element    //*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img
+    click element    //*[@id="instock_tab_561"]/tbody/tr[3]/td[2]/form/table/tbody/tr/td[2]/input
+    page should contain element    //*[@id="iscontenttabl"]/tbody/tr[2]/td/table/tbody/tr[2]/td[1]/a
+    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[2]/div/form/table[2]/tbody/tr/td[2]/input
+    input text    name=first_name    ${name}
+    input text    name=phone    ${phone}
+    select from list    //*[@id="List1"]    1d
+    wait until element is visible    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
+    click image    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
+    ${order.pre}=    get text    //h1 [@class='isfont17']
+    ${order.after}=    get substring    ${order.pre}    12    24
+    click element    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div/div/table/tbody/tr[6]/td[2]/a/img
+    Go to    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/reports.php
+    input text    name=login    admin
+    input password    name=password    111
+    click element    //input [@type='submit' and \ @value="Login"]
+    ${dd}=    Get time
+    ${date}=    get Substring    ${dd}    0    10
+    input text    name=StartAnotherDate    ${date}
+    input text    name=search    ${order.after}
+    click element    //input [@type='submit' and @value='показать']
+    page should contain    ${order.after}
+    click element    //td [@align='center' and @class='celss' and @width='75']
+    input text    name=addnewprod    7839
+    click element    //input [@type='submit' and @value='Добавить']
+    input text    name=countprod_1_07839    5
+    click element    //input [@type='submit' and @value='Сохранить']
+    page should contain    добавление товара: товар <07839> добавлен в заказ
+    page should contain    изменено количества товара с 1 шт на 5 шт 07839
+    textfield value should be    //input [@type='text' and @name='countprod_1_07839']    5
+    ${order.litle.pre}=    get location
+    ${order.litle.after}=    get substring    ${order.litle.pre}    -5
+    ${goods.additional}=    get value    //input [@type='hidden' and @name='orderunikid_1_07839']
+    click element    //a [@href="javascript:confirmDelete('','Удалить ?','reports.php?page=orders&action=edit&id=${order.litle.after}&proddel=07839&pcodeid=0&unkid=${goods.additional}');"]
+    confirm action
+    page should contain    удаление товара: товар <07839> удален из заказа
+    select from list    name=status    11
+    click element    //input [@type='submit' and @value='Сохранить']
+    get selected list value    name=status
+    list selection should be    name=status    11
+    click element    //input [@type='button' and @value='Вернуться']
+    input text    name=search    ${order.after}
+    page should contain    нал. нова почта
+    click element    //td [@align='center' and @class='celss' and @width='75']
+    select from list    name=status    10
+    click element    //input [@type='submit' and @value='Сохранить']
+    list selection should be    name=status    10
+    page should contain    статус был изменён на ОТМЕНЁН(ЛОЖНЫЙ ЗАКАЗ)
     close all browsers
