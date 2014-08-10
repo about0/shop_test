@@ -1,6 +1,7 @@
 *** Settings ***
-Library           Selenium2Library    run_on_failure=Nothing
+Library           Selenium2Library
 Library           String
+Library           ../../../../../Python27/Lib/AutoItLibrary-1.1/setup.py
 
 *** Variables ***
 ${name}           Autotest
@@ -127,6 +128,8 @@ Shipping method 3
     ${time}=    get time    time
     input text    //*[@id="iscontenttabl"]/tbody/tr[3]/td/table/tbody/tr/td[2]/textarea    ${time}
     wait until element is visible    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
+    Execute javascript    window.scrollTo(0,10000);
+    sleep    1
     click image    //*[@id="iscontenttabl"]/tbody/tr[2]/td[2]/table/tbody/tr/td[2]/div[1]/div/form/table[4]/tbody/tr/td[2]/input
     page should contain    Для перечисления средств на банковскую карточку вам необходимо посетить любое отделение Приватбанка, также вы можете перечислить деньги с помощью системы Приват24. При оформлении платежа укажите следующую информацию:
     page should contain    Номер карточки: 1111 2222 3333 4444
@@ -323,21 +326,15 @@ category verifying
     click element    //*[@id="bottomNavClose"]/img
     sleep    0.4
     click element    //*[@id="menu"]/li[18]/a/div
-    page should not contain element    //*[@id="instock_tab_13014"]/tbody/tr[1]/td[1]/a[1]/img
     page should not contain element    //*[@id="instock_tab_5928"]/tbody/tr[1]/td[1]/a[1]/img
-    page should not contain element    //*[@id="instock_tab_11988"]/tbody/tr[1]/td[1]/a[1]/img
     page should not contain element    //*[@id="instock_tab_12291"]/tbody/tr[1]/td[1]/a[1]/img
     click link    все
     Execute javascript    window.scrollTo(0,5000);
     wait until page contains element    //*[@id="instock_tab_5928"]/tbody/tr[1]/td[1]/a[1]/img
     Execute javascript    window.scrollTo(0,5000);
-    wait until page contains element    //*[@id="instock_tab_11988"]
-    Execute javascript    window.scrollTo(0,5000);
     page should contain element    //*[@id="instock_tab_13014"]/tbody/tr[1]/td[1]/a[1]/img
     Execute javascript    window.scrollTo(0,5000);
     page should contain element    //*[@id="instock_tab_5928"]/tbody/tr[1]/td[1]/a[1]/img
-    Execute javascript    window.scrollTo(0,5000);
-    page should contain element    //*[@id="instock_tab_11988"]/tbody/tr[1]/td[1]/a[1]/img
     Execute javascript    window.scrollTo(0,10000);
     wait until page contains element    //*[@id="instock_tab_12291"]/tbody/tr[1]/td[1]/a[1]/img
     page should contain element    //*[@id="instock_tab_12291"]/tbody/tr[1]/td[1]/a[1]/img
@@ -358,8 +355,6 @@ Continuously loading
     Page should not contain    //*[@id="instock_tab_5358"]/tbody/tr[1]/td[1]/a[1]/img
     Page should not contain    //*[@id="instock_tab_10738"]/tbody/tr[1]/td[1]/a[1]/img
     Page should not contain    //*[@id="instock_tab_12937"]/tbody/tr[1]/td[1]/a[1]/img
-    Page should not contain    //*[@id="instock_tab_241"]/tbody/tr[1]/td[1]/a[1]/img
-    Page should not contain    //*[@id="instock_tab_12343"]/tbody/tr[1]/td[1]/a[1]/img
     click link    все
     Execute javascript    window.scrollTo(0,10000);
     wait until page contains element    //*[@id="instock_tab_11819"]/tbody/tr[1]/td[1]/a[1]/img
@@ -368,10 +363,13 @@ Continuously loading
     Execute javascript    window.scrollTo(0,10000);
     wait until page contains element    //*[@id="instock_tab_14569"]/tbody/tr[1]/td[1]/a[1]/img
     Execute javascript    window.scrollTo(0,10000);
+    sleep    2
     wait until page contains element    //*[@id="instock_tab_12675"]/tbody/tr[1]/td[1]/a[1]/img
     Execute javascript    window.scrollTo(0,10000);
+    sleep    2
     wait until page contains element    //*[@id="instock_tab_10950"]/tbody/tr[1]/td[1]/a[1]/img
     Execute javascript    window.scrollTo(0,10000);
+    sleep    2
     wait until page contains element    //*[@id="instock_tab_5358"]/tbody/tr[1]/td[1]/a[1]/img
     Execute javascript    window.scrollTo(0,10000);
     wait until page contains element    //*[@id="instock_tab_10738"]/tbody/tr[1]/td[1]/a[1]/img
@@ -379,12 +377,6 @@ Continuously loading
     sleep    2
     Execute javascript    window.scrollTo(0,15000);
     wait until page contains element    //*[@id="instock_tab_12937"]/tbody/tr[1]/td[1]/a[1]/img
-    Execute javascript    window.scrollTo(0,10000);
-    wait until page contains element    //*[@id="instock_tab_241"]/tbody/tr[1]/td[1]/a[1]/img
-    Execute javascript    window.scrollTo(0,15000);
-    sleep    2
-    Execute javascript    window.scrollTo(0,15000);
-    wait until page contains element    //*[@id="instock_tab_12343"]/tbody/tr[1]/td[1]/a[1]/img
     close all browsers
 
 Few pictures for goods
@@ -524,7 +516,6 @@ exclusive vibrators
     page should contain element    //*[@id="instock_tab_4265"]/tbody/tr[1]/td[1]/div[2]
     page should contain element    //*[@id="instock_tab_8891"]/tbody/tr[1]/td[1]/a[1]/img
     page should contain element    //*[@id="instock_tab_8918"]/tbody/tr[1]/td[1]/a[1]/img
-    page should contain element    //*[@id="instock_tab_3675"]/tbody/tr[1]/td[1]/a[1]/img
     page should contain element    //*[@id="instock_tab_7965"]/tbody/tr[1]/td[1]/a[1]/img
     page should contain element    //*[@id="instock_tab_11112"]/tbody/tr[1]/td[1]/a[1]/img
     page should contain element    //*[@id="instock_tab_10698"]/tbody/tr[1]/td[1]/a[1]/img
@@ -644,4 +635,111 @@ Order changing and canceling
     click element    //input [@type='submit' and @value='Сохранить']
     list selection should be    name=status    10
     page should contain    статус был изменён на ОТМЕНЁН(ЛОЖНЫЙ ЗАКАЗ)
+    close all browsers
+
+Meta generation
+    open browser    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/vibrators.html?&show_all=yes    browser=ff
+    page should contain element    //meta [@name='robots' and @content='noindex,follow']
+    go to    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/vibrators/exclusive.html?&show_all=yes
+    page should contain element    //meta [@name='robots' and @content='noindex,follow']
+    go to    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/search.html?searchstring=asdasdasd&x=0&y=0
+    page should contain element    //meta [@name='robots' and @content='noindex,follow']
+    go to    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/vibrators.html?gclid=Cj0KEQjwxZieBRDegZuj9rzLt_ABEiQASqRd-gfiOEDw-aHlE-xtfIT8Tag6EVsjSC39gPF0Ii0E6PsaAsuq8P8HAQ
+    page should contain element    //meta [@name='robots' and @content='noindex,follow']
+    go to    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/vacuum-pomps.html?x=35&y=10&filter_start_-1=116&filter_stop_-1=4060&filter_start_11=5&filter_stop_11=58&filter_start_12=6.7&filter_stop_12=15&ftv_id_158=on&filter_search=1
+    page should contain element    //meta [@name='robots' and @content='noindex,follow']
+    go to    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/helpen.html
+    page should contain element    //meta [@name='robots' and @content='noindex,follow']
+    close all browsers
+
+Color/size selection
+    [Documentation]    Selection of color/size in category afterwards selection in commodity.
+    Open browser    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/    browser=chrome
+    input text    id=isfindedit    Вибратор Lelo Elise 2
+    click button    id=issearchbut
+    select from list    name=sizecolor    22004
+    click image    http://www.isex.kiev.ua/images/is_buybutton.gif
+
+Recall
+    Open browser    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/    browser=chrome
+    set window size    ${width}    ${height}
+    input text    //*[@id="isfindedit"]    смазка
+    click button    //*[@id="issearchbut"]
+    click element    //*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img
+    click link    Перезвоните мне!
+    input text    name=i_want_name    Autotest
+    input text    name=i_want_phone    Autotest
+    click image    http://www.isex.kiev.ua/images/is_pdcallmy.gif
+    go to    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/reports.php
+    input text    name=login    admin
+    input password    name=password    111
+    click element    //input [@type='submit' and \ @value="Login"]
+    select from list    name=page    callme
+    ${dd}=    Get time
+    ${date}=    get Substring    ${dd}    0    10
+    input text    name=StartAnotherDate    ${date}
+    click element    //input [@type='submit' and @value='показать']
+    click link    смотреть/изменить
+    select from list    name=enabled    1
+    click element    //input [@type='submit' and @value='Сохранить']
+    click element    //input [@type='button' and @value='Вернуться']
+    page should contain    выполнен
+    close all browsers
+
+Discount
+    Open browser    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/    browser=chrome
+    set window size    ${width}    ${height}
+    input text    //*[@id="isfindedit"]    смазка
+    click button    //*[@id="issearchbut"]
+    click element    //*[@id="instock_tab_561"]/tbody/tr[1]/td[1]/a[1]/img
+    click link    Нашли дешевле?
+    input text    name=discont_link    Autotest
+    input text    name=discont_name    Autotest
+    input text    name=discont_phone    Autotest
+    click image    http://www.isex.kiev.ua/images/is_discont.gif
+    go to    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/reports.php
+    input text    name=login    admin
+    input password    name=password    111
+    click element    //input [@type='submit' and \ @value="Login"]
+    select from list    name=page    discont
+    ${dd}=    Get time
+    ${date}=    get Substring    ${dd}    0    10
+    input text    name=StartAnotherDate    ${date}
+    click element    //input [@type='submit' and @value='показать']
+    click link    смотреть/изменить
+    select from list    name=enabled    1
+    click element    //input [@type='submit' and @value='Сохранить']
+    click element    //input [@type='button' and @value='Вернуться']
+    page should contain    выполнен
+    close all browsers
+
+Comment review
+    Open browser    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/    browser=chrome
+    set window size    ${width}    ${height}
+    click link    http://www.isex.kiev.ua/reviews.html
+    input text    name=name    Autotest
+    input text    name=text    Autotest
+    click image    http://www.isex.kiev.ua/images/is_comment.gif
+    go to    http://testisex:TeLdmFi[76v_@www.isex.kiev.ua/reports.php
+    input text    name=login    admin
+    input password    name=password    111
+    click element    //input [@type='submit' and \ @value="Login"]
+    select from list    name=page    reviews
+    ${dd}=    Get time
+    ${date}=    get Substring    ${dd}    0    10
+    input text    name=StartAnotherDate    ${date}
+    click element    //input [@type='submit' and @value='показать']
+    click link    Изменить
+    select from list    name=enable    1
+    input text    //textarea [@name='text' and @class='callmecomments']    Autotest ${date}
+    click element    //input [@type='submit' and @value='Сохранить']
+    click element    //input [@type='button' and @value='Назад']
+    go to    http://www.isex.kiev.ua/reviews.html
+    page should contain    Autotest ${date}
+    go to    http://www.isex.kiev.ua/reports.php?page=reviews&action=show&option=start
+    select radio button    status    all
+    click element    //input [@type='submit' and @value='показать']
+    click element    //img [@src='/images/backend/action_delete.gif' and @alt='удалить']
+    go to    http://www.isex.kiev.ua/reviews.html
+    page should not contain    Autotest ${date}
     close all browsers
